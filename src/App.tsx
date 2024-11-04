@@ -3,17 +3,17 @@ import './App.css';
 import Topbar from "./components/topbar/topbar";
 import Overview from "./components/overview/overview";
 import topbarMenu from "./components/topbar/topbar-menu";
+import { screenName } from "./App.types";
 
 const App = () => {
   const [menu, setMenu ] = React.useState(topbarMenu);
-  const [selectedPage, setSelectedPage] = React.useState(menu[0].id);
+  const [selectedPage, setSelectedPage] = React.useState<screenName>(menu[0].id as screenName);
 
   const updateMenu = ( data:any ) => {
-
     const updated = menu.map (item => {
       if (data.id === item.id) { return { ...item, selected: true }; }
       else return { ...item, selected: false };
-    })
+    });
     setMenu(updated);
     setSelectedPage(data.id);
   }
