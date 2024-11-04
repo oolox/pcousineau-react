@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/App.types.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/services/skillsData.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/services/timelineData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/skills/skills.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/counter/counterSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/overview/overview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/overview/overview.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
@@ -73,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730682650958</updated>
-      <workItem from="1730682651987" duration="9535000" />
+      <workItem from="1730682651987" duration="11510000" />
     </task>
     <servers />
   </component>

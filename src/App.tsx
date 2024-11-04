@@ -1,13 +1,20 @@
 import React from 'react';
 import './App.css';
 import Topbar from "./components/topbar/topbar";
+import Skills from "./components/skills/skills";
 import Overview from "./components/overview/overview";
 import topbarMenu from "./components/topbar/topbar-menu";
 import { screenName } from "./App.types";
 
+import { useAppSelector, useAppDispatch } from './hooks';
+import { decrement, increment } from './features/counter/counterSlice'
+
 const App = () => {
   const [menu, setMenu ] = React.useState(topbarMenu);
   const [selectedPage, setSelectedPage] = React.useState<screenName>(menu[0].id as screenName);
+
+    const count = useAppSelector((state) => state.counter.value)
+    const dispatch = useAppDispatch()
 
   const updateMenu = ( data:any ) => {
     const updated = menu.map (item => {
@@ -21,19 +28,18 @@ const App = () => {
    const Showpage = ()=> {
     switch (selectedPage) {
         case 'OVERVIEW': return <Overview />;
-        case 'SKILLS': return <div>SKILLS</div>;
+        case 'SKILLS': return <Skills />;
         case 'TIMELINE': return <div>TIMELINE</div>;
         case 'SAMPLES': return <div>SAMPLES</div>;
         default: return <div>ERROR: Can not find page</div>;
     }
   }
 
-
   return (
    <div>
 
-     <Topbar menu={menu} updatemenu={updateMenu}></Topbar>
-     <Showpage></Showpage>
+       <Topbar menu={menu} updatemenu={updateMenu}></Topbar>
+       <Showpage></Showpage>
 
    </div>
 
