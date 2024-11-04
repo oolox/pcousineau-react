@@ -61,18 +61,21 @@ const Skills = () => {
                 } else return {...item, isSort: false};
             });
         }
-        setSortObj(updated);
+
         updated.forEach((item: any) => {
             if (item.key === col.key) {
                 setSortBy(item);
                 doSort(item);
             }
         })
+        setSortObj(updated);
     }
 
     const skillsHeader = sortObj.map((col: any) => {
         return <td
             onClick={() => sortSkillsList(col)}
+            style={ { backgroundColor: col.isSort ? '#202020' : '#808080'}}
+
             className="table-header" key={col.key}>
             {col.key} { col.isSort ? col.direction == 'asc' ? '+' : '-' : ''}
         </td>;
@@ -103,7 +106,6 @@ const Skills = () => {
                 Decrement
             </button>
         </code>
-
 
     return <div className="skills">
         <table>
