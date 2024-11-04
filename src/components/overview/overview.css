@@ -1,0 +1,74 @@
+.overview-container {
+    padding: 1rem;
+
+    .overview {
+        color: #202020;
+        width: 100%;
+        display: flex;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+
+        /* '#206080','#208060','#806020','#802060' */
+
+        .category {
+            width: 8rem;
+            padding: 1rem;
+            border-right: 4px solid #a0a0a0;
+            text-align: right;
+            font-weight: bold;
+
+            &.expertise {
+                border-right: 4px solid #206080;
+            }
+
+            &.development {
+                border-right: 4px solid #208060;
+            }
+
+            &.teams {
+                border-right: 4px solid #806020;
+            }
+
+            &.site {
+                border-right: 4px solid #802060;
+            }
+        }
+
+        .description {
+            flex: 1;
+            padding: 1rem;
+
+        }
+    }
+
+    .footer {
+        padding-top: 2rem;
+        color: #808080;
+
+        img {
+            position: relative;
+            top: +3px;
+            margin-right: 0.25rem;
+        }
+    }
+
+    a:link {
+        color: #808080;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #808080;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #202020;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: #808080;
+        text-decoration: none;
+    }
+}

@@ -5,12 +5,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/topbar/topbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/topbar/topbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icons/expand_circle_down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icons/expand_circle_up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icons/github-mark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/a1-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/a1-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/a1-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/a1-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/adrGarage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/beerlog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/bv0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/bv1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/bv2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/bv3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/plume1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/plume2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/plume3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/plume4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/plume5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/plume6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/plume7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/plume8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/plume9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/roomlinx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/simulcare.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/pcousineauResume.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/expand_circle_down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/expand_circle_up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/a1-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/a1-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/a1-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/a1-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/adrGarage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/beerlog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/bv0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/bv1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/bv2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/bv3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/plume1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/plume2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/plume3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/plume4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/plume5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/plume6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/plume7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/plume8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/plume9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/roomlinx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/simulcare.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/pcousineauResume.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/overview/overview.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/overview/overview.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/topbar/topbar-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/topbar/topbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/topbar/topbar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +84,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Code/pcousineau-react/src",
+    "last_opened_file_path": "C:/Code/pcousineau-react/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -45,7 +96,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Code\pcousineau-react\public" />
       <recent name="C:\Code\pcousineau-react\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Code\pcousineau-react\public\assets\icons" />
+      <recent name="C:\Code\pcousineau-react\src\components\overview" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -63,7 +119,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730682650958</updated>
-      <workItem from="1730682651987" duration="3001000" />
+      <workItem from="1730682651987" duration="7257000" />
     </task>
     <servers />
   </component>

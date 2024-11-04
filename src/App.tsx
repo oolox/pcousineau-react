@@ -1,51 +1,40 @@
 import React from 'react';
 import './App.css';
 import Topbar from "./components/topbar/topbar";
-
-const getMenu= () => {
-  return [
-    {
-      label: 'overview',
-      key: 'OVERVIEW',
-      selected: true
-    },
-    {
-      label: 'skills',
-      key: 'SKILLS',
-      selected: false
-    },
-    {
-      label: 'experience',
-      key: 'TIMELINE',
-      selected: false
-    },
-    {
-      label: 'samples',
-      key: 'LINKS',
-      selected: false
-    }
-  ];
-}
-
+import Overview from "./components/overview/overview";
+import topbarMenu from "./components/topbar/topbar-menu";
 
 const App = () => {
-  const [count, setCount] = React.useState<number>(0);
-  const [menu, setMenu ] = React.useState(getMenu());
-
+  const [menu, setMenu ] = React.useState(topbarMenu);
+  const [selectedPage, setSelectedPage] = React.useState(menu[0].id);
 
   const updateMenu = ( data:any ) => {
-    console.log('SET: ',data);
-    setCount(count+1);
-    // setMenu
+
+    const updated = menu.map (item => {
+      if (data.id === item.id) { return { ...item, selected: true }; }
+      else return { ...item, selected: false };
+    })
+    setMenu(updated);
+    setSelectedPage(data.id);
+  }
+
+   const Showpage = ()=> {
+    switch (selectedPage) {
+        case 'OVERVIEW': return <Overview />;
+        case 'SKILLS': return <div>SKILLS</div>;
+        case 'TIMELINE': return <div>TIMELINE</div>;
+        case 'SAMPLES': return <div>SAMPLES</div>;
+        default: return <div>ERROR: Can not find page</div>;
+    }
   }
 
 
   return (
    <div>
-     <div>
-      pcousineau-react : {count}
-     </div>
+
      <Topbar menu={menu} updatemenu={updateMenu}></Topbar>
+     <Showpage></Showpage>
+
    </div>
 
   );

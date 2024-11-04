@@ -14,7 +14,7 @@ const topbar = (props:any) => {
         });
       return <div
           onClick={() => handleClick(item)}
-          className={btnClass} key={item.key}>
+          className={btnClass} key={item.id}>
           {item.label}
       </div>;
     });
