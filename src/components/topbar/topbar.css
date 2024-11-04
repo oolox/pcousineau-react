@@ -1,0 +1,31 @@
+.topbar {
+    display: inline-flex;
+    margin-bottom: 1rem;
+    width: 100%;
+
+    .menu-items {
+        display: inline-flex;
+        width: 100%;
+        text-transform: uppercase;
+
+        .menu-item {
+            padding: 0.5rem 0.5rem;
+            width: 100%;
+            cursor: pointer;
+
+            &.selected {
+                background-color: #404040;
+                color: #e0e0e0
+            }
+
+            &.notselected {
+                background-color: #d0d0d0;
+                color: #808080
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 0.25rem;
+        }
+    }
+}
