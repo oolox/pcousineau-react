@@ -6,15 +6,9 @@ import Overview from "./components/overview/overview";
 import topbarMenu from "./components/topbar/topbar-menu";
 import { screenName } from "./App.types";
 
-import { useAppSelector, useAppDispatch } from './hooks';
-import { decrement, increment } from './features/counter/counterSlice'
-
 const App = () => {
   const [menu, setMenu ] = React.useState(topbarMenu);
   const [selectedPage, setSelectedPage] = React.useState<screenName>(menu[0].id as screenName);
-
-    const count = useAppSelector((state) => state.counter.value)
-    const dispatch = useAppDispatch()
 
   const updateMenu = ( data:any ) => {
     const updated = menu.map (item => {

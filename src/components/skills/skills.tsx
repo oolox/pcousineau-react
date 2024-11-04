@@ -1,5 +1,5 @@
-import { useAppSelector, useAppDispatch } from '../../hooks';
-import { decrement, increment } from '../../features/counter/counterSlice';
+import { useAppSelector, useAppDispatch } from '../../store/hooks';
+import { decrement, increment } from '../../store/counterSlice';
 import React from "react";
 
 
