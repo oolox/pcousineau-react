@@ -1,4 +1,4 @@
-import {jobItemType} from "../../App.types";
+import {jobItemType} from "../App.types";
 
 export const timelineData: jobItemType[] = [
     {

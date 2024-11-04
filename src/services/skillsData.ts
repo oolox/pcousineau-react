@@ -1,4 +1,4 @@
-import { skillsItemType } from "../../App.types";
+import { skillsItemType } from "../App.types";
 
 export const skillsData: skillsItemType[] = [
   { label: 'Angular', type: 'Languages', rating: 10, years: 8  },

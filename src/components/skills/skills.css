@@ -1,0 +1,29 @@
+.skills {
+    padding: 2rem;
+    table {
+        font-size: 0.8rem;
+        thead {
+            cursor: pointer;
+            tr {
+                background-color: #404040;
+                color: #d0d0d0;
+                td {
+                    text-transform: uppercase;
+                    padding: 0.25rem 2rem 0.25rem 0.5rem;
+                    width: 4rem;
+                }
+                td:first-child {
+                    width: 10rem;
+                }
+            }
+        }
+        tbody {
+            tr {
+                background-color: #d0d0d0;
+                td {
+                    padding: 0.25rem 2rem 0.25rem 0.5rem
+                }
+            }
+        }
+    }
+}
