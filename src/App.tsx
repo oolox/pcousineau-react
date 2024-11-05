@@ -3,6 +3,7 @@ import './App.css';
 import Topbar from "./components/topbar/topbar";
 import Skills from "./components/skills/skills";
 import Overview from "./components/overview/overview";
+import Skilltree from "./components/skilltree/skilltree";
 import topbarMenu from "./components/topbar/topbar-menu";
 import { screenName } from "./App.types";
 
@@ -23,7 +24,7 @@ const App = () => {
     switch (selectedPage) {
         case 'OVERVIEW': return <Overview />;
         case 'SKILLS': return <Skills />;
-        case 'TIMELINE': return <div>TIMELINE</div>;
+        case 'SKILLTREE': return <Skilltree />;
         case 'SAMPLES': return <div>SAMPLES</div>;
         default: return <div>ERROR: Can not find page</div>;
     }

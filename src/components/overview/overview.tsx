@@ -50,7 +50,7 @@ const overview = () => {
 
         <div className="footer">
             <a href="https://github.com/oolox/pcousineau-react" target="_blank">
-                <img src="./assets/icons/github-mark.png" height="18"/>
+                <img alt="Github logo" src="./assets/icons/github-mark.png" height="18"/>
                 This site provides a demonstrable example of a data driven React application;
                 source available on GitHub
             </a>

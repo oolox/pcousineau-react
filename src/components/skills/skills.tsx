@@ -51,7 +51,7 @@ const Skills = () => {
         if (col.id === sortBy.id) {
             updated = sortObj.map(item => {
                 if (col.id === item.id) {
-                    return {...item, direction: item.direction == 'asc' ? 'desc' : 'asc'};
+                    return {...item, direction: item.direction === 'asc' ? 'desc' : 'asc'};
                 } else return item;
             });
         } else {
@@ -76,13 +76,13 @@ const Skills = () => {
             onClick={() => sortSkillsList(col)}
             style={ { backgroundColor: col.isSort ? '#202020' : '#808080'}}
 
-            className="table-header" id={col.id}>
-            {col.id} { col.isSort ? col.direction == 'asc' ? '+' : '-' : ''}
+            className="table-header" key={col.id}>
+            {col.id} { col.isSort ? col.direction === 'asc' ? '+' : '-' : ''}
         </td>;
     });
 
     const skillsRows = viewlist.map((skill: any) => {
-        return <tr id={skill.label}>
+        return <tr key={skill.label}>
             <td>{skill.label}</td>
             <td>{skill.type}</td>
             <td>{skill.rating}</td>

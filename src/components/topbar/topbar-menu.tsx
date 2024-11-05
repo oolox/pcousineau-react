@@ -5,13 +5,13 @@ const topbarMenu = [
         selected: true
     },
     {
-        label: 'skills',
+        label: 'skills table',
         id: 'SKILLS',
         selected: false
     },
     {
-        label: 'experience',
-        id: 'TIMELINE',
+        label: 'skills tree',
+        id: 'SKILLTREE',
         selected: false
     },
     {

@@ -1,4 +1,4 @@
-export type screenName = 'TIMELINE' | 'SKILLS' | 'SAMPLES' | 'OVERVIEW';
+export type screenName = 'SKILLTREE' | 'SKILLS' | 'SAMPLES' | 'OVERVIEW';
 
 export interface jobItemType {
   company: string;
