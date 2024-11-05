@@ -3,7 +3,8 @@ import {decrement, increment, selectCount} from '../../store/counterSlice';
 import React from "react";
 import {selectSkills} from "../../store/skillsSlice";
 import "./skills.css"
-import {skillsItemType} from "../../App.types";
+import {skillsItemType,colorLutType} from "../../App.types";
+import {colorLut} from "../../services/colorLut";
 
 interface sortOptionType {
     id: string;
@@ -15,7 +16,6 @@ const Skills = () => {
     const dispatch = useAppDispatch()
     const count: number = useAppSelector(selectCount);
     const skills: skillsItemType[] = useAppSelector(selectSkills);
-
     const initSort: sortOptionType[] = Object.keys(skills[0]).map((id) => {
         return {id: id, direction: 'asc', isSort: false}
     });
@@ -23,6 +23,7 @@ const Skills = () => {
     const [viewlist, setViewlist] = React.useState(skills);
     const [sortObj, setSortObj] = React.useState(initSort);
     const [sortBy, setSortBy]= React.useState( {id:''});
+
 
 
     const doSort = (col: sortOptionType) => {
@@ -53,7 +54,7 @@ const Skills = () => {
 
     const sortSkillsList = (col: sortOptionType) => {
         let updated: any = {};
-        
+
             if (col.id === sortBy.id) {
                 updated = sortObj.map(item => {
                     if (col.id === item.id) {
@@ -74,14 +75,17 @@ const Skills = () => {
                 }
             })
             setSortObj(updated);
-
     }
 
+    let idx=-1;
     const skillsHeader = sortObj.map((col: sortOptionType) => {
+        idx++;
         return <td
             onClick={() => sortSkillsList(col)}
-            style={ { backgroundColor: col.isSort ? '#202020' : '#808080'}}
-
+            style={{
+                backgroundColor: col.isSort ? colorLut.highlight[idx] : colorLut.color[idx],
+                color: col.isSort ? 'white' : '#d0d0d0'
+            }}
             className="table-header" key={col.id}>
             {col.id} { col.isSort ? col.direction === 'asc' ? '+' : '-' : ''}
         </td>;

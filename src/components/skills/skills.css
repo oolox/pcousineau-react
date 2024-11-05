@@ -6,7 +6,7 @@
             cursor: pointer;
             tr {
                 background-color: #404040;
-                color: #d0d0d0;
+                color: white;
                 td {
                     text-transform: uppercase;
                     padding: 0.25rem 2rem 0.25rem 0.5rem;

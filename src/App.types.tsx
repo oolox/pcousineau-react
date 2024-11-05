@@ -1,5 +1,11 @@
 export type screenName = 'SKILLTREE' | 'SKILLS' | 'SAMPLES' | 'OVERVIEW';
 
+export interface colorLutType {
+  color:string[];
+  highlight:string[];
+}
+
+
 export interface jobItemType {
   company: string;
   link?: string;
