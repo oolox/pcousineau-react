@@ -10,19 +10,19 @@ const Skills = () => {
     const count: number = useAppSelector(selectCount);
     const skills: skillsItemType[] = useAppSelector(selectSkills);
 
-    const initSort: any[] = Object.keys(skills[0]).map((key) => {
-        return {key: key, direction: 'asc', isSort: false}
+    const initSort: any[] = Object.keys(skills[0]).map((id) => {
+        return {id: id, direction: 'asc', isSort: false}
     });
 
     const [viewlist, setViewlist] = React.useState(skills);
-    const [sortBy, setSortBy] = React.useState({key: 'type', direction: 'asc'});
+    const [sortBy, setSortBy] = React.useState({id: 'type', direction: 'asc'});
     const [sortObj, setSortObj] = React.useState(initSort);
 
     const doSort = (col: any) => {
 
         const dir = col.direction === 'asc' ? 1 : -1;
 
-        switch (col.key) {
+        switch (col.id) {
             case 'rating':
                 setViewlist([...viewlist].sort((a, b) => {
                     return (b.rating*dir) - (a.rating*dir)
@@ -48,22 +48,22 @@ const Skills = () => {
 
     const sortSkillsList = (col: any) => {
         let updated: any = {};
-        if (col.key === sortBy.key) {
+        if (col.id === sortBy.id) {
             updated = sortObj.map(item => {
-                if (col.key === item.key) {
+                if (col.id === item.id) {
                     return {...item, direction: item.direction == 'asc' ? 'desc' : 'asc'};
                 } else return item;
             });
         } else {
             updated = sortObj.map(item => {
-                if (col.key === item.key) {
+                if (col.id === item.id) {
                     return {...item, isSort: true};
                 } else return {...item, isSort: false};
             });
         }
 
         updated.forEach((item: any) => {
-            if (item.key === col.key) {
+            if (item.id === col.id) {
                 setSortBy(item);
                 doSort(item);
             }
@@ -76,13 +76,13 @@ const Skills = () => {
             onClick={() => sortSkillsList(col)}
             style={ { backgroundColor: col.isSort ? '#202020' : '#808080'}}
 
-            className="table-header" key={col.key}>
-            {col.key} { col.isSort ? col.direction == 'asc' ? '+' : '-' : ''}
+            className="table-header" id={col.id}>
+            {col.id} { col.isSort ? col.direction == 'asc' ? '+' : '-' : ''}
         </td>;
     });
 
     const skillsRows = viewlist.map((skill: any) => {
-        return <tr key={skill.label}>
+        return <tr id={skill.label}>
             <td>{skill.label}</td>
             <td>{skill.type}</td>
             <td>{skill.rating}</td>
