@@ -1,14 +1,12 @@
 
-
 export interface skillTreeType {
     name: string;
     isFolder?: boolean;
     children?: any;
+    show?: boolean;
 }
 
-export const skillTree : skillTreeType[] =[{
-    name: "Skills",
-    children: [
+export const skillTree : skillTreeType[] =[
         { name: "Languages",
           children: [
               { name: "React" },
@@ -33,7 +31,7 @@ export const skillTree : skillTreeType[] =[{
                     name: "Visualization",
                     children: [
                         { name: "D3" },
-                        { name: "Kendo / Highcharts" },
+                        { name: "SVG/Canvas" },
                         { name: "ChartJS" },
                         { name: "Mapbox" },
                     ]
@@ -42,5 +40,3 @@ export const skillTree : skillTreeType[] =[{
             ]
         }
     ]
-}]
-

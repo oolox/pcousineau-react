@@ -5,23 +5,28 @@ import {selectSkills} from "../../store/skillsSlice";
 import "./skills.css"
 import {skillsItemType} from "../../App.types";
 
+interface sortOptionType {
+    id: string;
+    direction?: 'asc' | 'desc';
+    isSort?: boolean;
+}
+
 const Skills = () => {
     const dispatch = useAppDispatch()
     const count: number = useAppSelector(selectCount);
     const skills: skillsItemType[] = useAppSelector(selectSkills);
 
-    const initSort: any[] = Object.keys(skills[0]).map((id) => {
+    const initSort: sortOptionType[] = Object.keys(skills[0]).map((id) => {
         return {id: id, direction: 'asc', isSort: false}
     });
 
     const [viewlist, setViewlist] = React.useState(skills);
-    const [sortBy, setSortBy] = React.useState({id: 'type', direction: 'asc'});
     const [sortObj, setSortObj] = React.useState(initSort);
+    const [sortBy, setSortBy]= React.useState( {id:''});
 
-    const doSort = (col: any) => {
 
-        const dir = col.direction === 'asc' ? 1 : -1;
-
+    const doSort = (col: sortOptionType) => {
+        const dir:1|-1 = col.direction === 'asc' ? 1 : -1;
         switch (col.id) {
             case 'rating':
                 setViewlist([...viewlist].sort((a, b) => {
@@ -46,32 +51,33 @@ const Skills = () => {
         }
     }
 
-    const sortSkillsList = (col: any) => {
+    const sortSkillsList = (col: sortOptionType) => {
         let updated: any = {};
-        if (col.id === sortBy.id) {
-            updated = sortObj.map(item => {
-                if (col.id === item.id) {
-                    return {...item, direction: item.direction === 'asc' ? 'desc' : 'asc'};
-                } else return item;
-            });
-        } else {
-            updated = sortObj.map(item => {
-                if (col.id === item.id) {
-                    return {...item, isSort: true};
-                } else return {...item, isSort: false};
-            });
-        }
-
-        updated.forEach((item: any) => {
-            if (item.id === col.id) {
-                setSortBy(item);
-                doSort(item);
+        
+            if (col.id === sortBy.id) {
+                updated = sortObj.map(item => {
+                    if (col.id === item.id) {
+                        return {...item, direction: item.direction === 'asc' ? 'desc' : 'asc'};
+                    } else return item;
+                });
+            } else {
+                updated = sortObj.map(item => {
+                    if (col.id === item.id) {
+                        return {...item, isSort: true};
+                    } else return {...item, isSort: false};
+                });
             }
-        })
-        setSortObj(updated);
+            updated.forEach((item: any) => {
+                if (item.id === col.id) {
+                    setSortBy(item);
+                    doSort(item);
+                }
+            })
+            setSortObj(updated);
+
     }
 
-    const skillsHeader = sortObj.map((col: any) => {
+    const skillsHeader = sortObj.map((col: sortOptionType) => {
         return <td
             onClick={() => sortSkillsList(col)}
             style={ { backgroundColor: col.isSort ? '#202020' : '#808080'}}
