@@ -3,7 +3,7 @@ import {decrement, increment, selectCount} from '../../store/counterSlice';
 import React from "react";
 import {selectSkills} from "../../store/skillsSlice";
 import "./skills.css"
-import {skillsItemType,colorLutType} from "../../App.types";
+import {skillsItemType} from "../../App.types";
 import {colorLut} from "../../services/colorLut";
 
 interface sortOptionType {
@@ -23,8 +23,6 @@ const Skills = () => {
     const [viewlist, setViewlist] = React.useState(skills);
     const [sortObj, setSortObj] = React.useState(initSort);
     const [sortBy, setSortBy]= React.useState( {id:''});
-
-
 
     const doSort = (col: sortOptionType) => {
         const dir:1|-1 = col.direction === 'asc' ? 1 : -1;

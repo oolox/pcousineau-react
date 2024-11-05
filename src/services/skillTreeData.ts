@@ -3,7 +3,6 @@ export interface skillTreeType {
     name: string;
     isFolder?: boolean;
     children?: any;
-    show?: boolean;
 }
 
 export const skillTree : skillTreeType[] =[
@@ -34,6 +33,28 @@ export const skillTree : skillTreeType[] =[
                         { name: "SVG/Canvas" },
                         { name: "ChartJS" },
                         { name: "Mapbox" },
+                    ]
+                },
+
+            ]
+        },
+        {
+            name: "Tools",
+            children: [
+                {
+                    name: "Development",
+                    children: [
+                        { name: "GitHub" },
+                        { name: "Jira" },
+                        { name: "Heroku" },
+                    ]
+                },
+                {
+                    name: "Design",
+                    children: [
+                        { name: "Figma" },
+                        { name: "Adobe" },
+                        { name: "Confluence" },
                     ]
                 },
 

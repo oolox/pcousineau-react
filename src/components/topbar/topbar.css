@@ -14,12 +14,10 @@
             cursor: pointer;
 
             &.selected {
-                background-color: #404040;
                 color: #e0e0e0
             }
 
             &.notselected {
-                background-color: #d0d0d0;
                 color: #808080
             }
         }

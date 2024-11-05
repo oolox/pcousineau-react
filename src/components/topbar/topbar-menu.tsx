@@ -10,7 +10,7 @@ const topbarMenu = [
         selected: false
     },
     {
-        label: 'skills tree',
+        label: 'recursive tree',
         id: 'SKILLTREE',
         selected: false
     },
