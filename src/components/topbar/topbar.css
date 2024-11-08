@@ -1,29 +1,60 @@
-.topbar {
-    display: inline-flex;
-    margin-bottom: 1rem;
-    width: 100%;
-
-    .menu-items {
-        display: inline-flex;
+.header {
+    .title-bar {
         width: 100%;
-        text-transform: uppercase;
+        display: inline-flex;
+        padding: 1rem;
 
-        .menu-item {
-            padding: 0.5rem 0.5rem;
-            width: 100%;
-            cursor: pointer;
-
-            &.selected {
-                color: #e0e0e0
+        .title-content {
+            .title {
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                color: #202020;
             }
-
-            &.notselected {
-                color: #808080
+            .subtitle {
+                font-size: 0.8rem;
+                color: #808080;
             }
         }
 
-        &:not(:last-child) {
-            margin-right: 0.25rem;
+        .tools {
+            position: absolute;
+            right: 1rem;
+            font-size: 0.8rem;
+            padding-right: 2rem;
+
+            .link {
+                padding-bottom: 0.125rem;
+            }
+        }
+    }
+
+    .topbar {
+        display: inline-flex;
+        margin-bottom: 1rem;
+        width: 100%;
+
+        .menu-items {
+            display: inline-flex;
+            width: 100%;
+            text-transform: uppercase;
+
+            .menu-item {
+                padding: 0.5rem 0.5rem;
+                width: 100%;
+                cursor: pointer;
+
+                &.selected {
+                    color: #e0e0e0
+                }
+
+                &.notselected {
+                    color: #808080
+                }
+            }
+
+            &:not(:last-child) {
+                margin-right: 0.25rem;
+            }
         }
     }
 }

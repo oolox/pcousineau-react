@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/topbar/topbar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/topbar/topbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/topbar/topbar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

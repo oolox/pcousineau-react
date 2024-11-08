@@ -23,10 +23,31 @@ const topbar = (props:any) => {
       </div>;
     });
 
-    return <div>
-        <div>
-            Paul Cousineau (v0.1)
+    return <div className="header">
+
+        <div className="title-bar">
+            <div className="title-content">
+                <div className="title">
+                    Paul Cousineau
+                </div>
+                <div className="subtitle">
+                    Web Applications Developer
+                </div>
+            </div>
+            <div className="tools">
+                <div className="link">
+                    <a target="_blank" href="mailto:oolotronic@hotmail.com">oolotronic&#64;hotmail.com</a>
+                </div>
+                <div className="link">
+                    <a target="_blank" href="https://www.linkedin.com/in/paul-cousineau-b3319461">LinkedIn</a>
+                </div>
+                <div className="link">
+                    <a target="_blank" href="./assets/pcousineauResume.pdf">Resume</a>
+                </div>
+            </div>
         </div>
+
+
         <div className="topbar">
             <div className="menu-items">
                 {menuItems}
