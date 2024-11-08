@@ -23,9 +23,14 @@ const topbar = (props:any) => {
       </div>;
     });
 
-    return <div className="topbar">
-        <div className="menu-items">
-          {menuItems}
+    return <div>
+        <div>
+            Paul Cousineau (v0.1)
+        </div>
+        <div className="topbar">
+            <div className="menu-items">
+                {menuItems}
+            </div>
         </div>
     </div>
 }
