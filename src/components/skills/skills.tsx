@@ -1,10 +1,10 @@
+import React from "react";
 import {useAppSelector, useAppDispatch} from '../../store/hooks';
 import {decrement, increment, selectCount} from '../../store/counterSlice';
-import React from "react";
 import {selectSkills} from "../../store/skillsSlice";
-import "./skills.css"
 import {skillsItemType} from "../../App.types";
 import {colorLut} from "../../services/colorLut";
+import "./skills.css"
 
 interface sortOptionType {
     id: string;
@@ -118,10 +118,12 @@ const Skills = () => {
     return <div className="skills">
         <table>
             <thead>
-            <tr>{skillsHeader}</tr>
+                <tr>
+                    {skillsHeader}
+                </tr>
             </thead>
             <tbody>
-            {skillsRows}
+                {skillsRows}
             </tbody>
         </table>
     </div>;

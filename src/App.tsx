@@ -32,10 +32,8 @@ const App = () => {
 
   return (
    <div>
-
        <Topbar menu={menu} updatemenu={updateMenu}></Topbar>
        <Showpage></Showpage>
-
    </div>
 
   );
