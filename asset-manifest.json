@@ -1,15 +1,36 @@
 {
   "files": {
-    "main.css": "/pcousineau-react/static/css/main.271b99b6.css",
-    "main.js": "/pcousineau-react/static/js/main.2b165935.js",
+    "main.css": "/pcousineau-react/static/css/main.224739ea.css",
+    "main.js": "/pcousineau-react/static/js/main.709c9e14.js",
     "static/js/453.d24b4189.chunk.js": "/pcousineau-react/static/js/453.d24b4189.chunk.js",
+    "static/media/beerlog.png": "/pcousineau-react/static/media/beerlog.cc0c936224ea6a470620.png",
+    "static/media/roomlinx.png": "/pcousineau-react/static/media/roomlinx.fdeb556c8881095fd541.png",
+    "static/media/simulcare.png": "/pcousineau-react/static/media/simulcare.e92921b885cbd0a05e87.png",
+    "static/media/plume2.png": "/pcousineau-react/static/media/plume2.7fc5527558b761a7ff70.png",
+    "static/media/adrGarage.png": "/pcousineau-react/static/media/adrGarage.7dd5c538dcdf9bb71530.png",
+    "static/media/plume6.png": "/pcousineau-react/static/media/plume6.fc25ec4018fbd2d32c63.png",
+    "static/media/plume7.png": "/pcousineau-react/static/media/plume7.0abea7d3fa3f8cc5e4af.png",
+    "static/media/plume3.png": "/pcousineau-react/static/media/plume3.c2fb4b487acdb6aabd4c.png",
+    "static/media/plume4.png": "/pcousineau-react/static/media/plume4.0fc699e16decf04fd415.png",
+    "static/media/plume1.png": "/pcousineau-react/static/media/plume1.36165bba3f29e1486365.png",
+    "static/media/plume8.png": "/pcousineau-react/static/media/plume8.bd7d1a6709f15fd198fe.png",
+    "static/media/a1-1.png": "/pcousineau-react/static/media/a1-1.a5eed92fd6d113b4a0e1.png",
+    "static/media/plume9.png": "/pcousineau-react/static/media/plume9.f195aa67974e5b065669.png",
+    "static/media/plume5.png": "/pcousineau-react/static/media/plume5.4da1af5a805af65c7ead.png",
+    "static/media/a1-2.png": "/pcousineau-react/static/media/a1-2.8a1132d0c1ae1c0e6874.png",
+    "static/media/a1-3.png": "/pcousineau-react/static/media/a1-3.28b0ac4aaf00c32addc4.png",
+    "static/media/bv2.jpg": "/pcousineau-react/static/media/bv2.962f4a33c6cb1a2b6551.jpg",
+    "static/media/bv0.jpg": "/pcousineau-react/static/media/bv0.2c6297e25fc7d960e2c7.jpg",
+    "static/media/bv1.jpg": "/pcousineau-react/static/media/bv1.4f1771baded675fa53e4.jpg",
+    "static/media/bv3.jpg": "/pcousineau-react/static/media/bv3.851d63730fa2fa43c374.jpg",
+    "static/media/a1-4.png": "/pcousineau-react/static/media/a1-4.1542ca035672d0b15d7c.png",
     "index.html": "/pcousineau-react/index.html",
-    "main.271b99b6.css.map": "/pcousineau-react/static/css/main.271b99b6.css.map",
-    "main.2b165935.js.map": "/pcousineau-react/static/js/main.2b165935.js.map",
+    "main.224739ea.css.map": "/pcousineau-react/static/css/main.224739ea.css.map",
+    "main.709c9e14.js.map": "/pcousineau-react/static/js/main.709c9e14.js.map",
     "453.d24b4189.chunk.js.map": "/pcousineau-react/static/js/453.d24b4189.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.271b99b6.css",
-    "static/js/main.2b165935.js"
+    "static/css/main.224739ea.css",
+    "static/js/main.709c9e14.js"
   ]
 }
