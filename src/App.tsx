@@ -6,6 +6,7 @@ import Overview from "./components/overview/overview";
 import Skilltree from "./components/skilltree/skilltree";
 import topbarMenu from "./components/topbar/topbar-menu";
 import { screenName } from "./App.types";
+import Samples from "./components/samples/samples";
 
 const App = () => {
   const [menu, setMenu ] = React.useState(topbarMenu);
@@ -25,7 +26,7 @@ const App = () => {
         case 'OVERVIEW': return <Overview />;
         case 'SKILLS': return <Skills />;
         case 'SKILLTREE': return <Skilltree />;
-        case 'SAMPLES': return <div>SAMPLES</div>;
+        case 'SAMPLES': return <Samples />;
         default: return <div>ERROR: Can not find page</div>;
     }
   }

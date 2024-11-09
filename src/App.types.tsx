@@ -11,7 +11,7 @@ export interface skillTreeType {
   children?: skillTreeType[];
 }
 
-export interface jobItemType {
+export interface timelineItemType {
   company: string;
   link?: string;
   jobTitle: string;
@@ -21,7 +21,7 @@ export interface jobItemType {
   selected?: boolean;
   screenshots?: screenshotType[];
   details?: string[];
-};
+}
 
 export interface skillsItemType {
     label: string;

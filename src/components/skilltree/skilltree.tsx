@@ -1,5 +1,5 @@
 import React from "react";
-import {useAppSelector, useAppDispatch} from '../../store/hooks';
+import {useAppSelector } from '../../store/hooks';
 import { skillTreeType} from '../../App.types';
 import './skilltree.css';
 import {selectSkilltree} from "../../store/skilltreeSlice";

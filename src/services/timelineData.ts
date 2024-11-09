@@ -1,6 +1,6 @@
-import {jobItemType} from "../App.types";
+import {timelineItemType} from "../App.types";
 
-export const timelineData: jobItemType[] = [
+export const timelineData: timelineItemType[] = [
     {
       company: 'Plume Design',
       link: 'https://www.linkedin.com/company/plume-wifi/',
