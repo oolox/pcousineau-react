@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/pcousineau-react/static/css/main.d45852cf.css",
-    "main.js": "/pcousineau-react/static/js/main.fac630bc.js",
-    "static/js/453.d24b4189.chunk.js": "/pcousineau-react/static/js/453.d24b4189.chunk.js",
+    "main.css": "/pcousineau-react/static/css/main.37ffe3c1.css",
+    "main.js": "/pcousineau-react/static/js/main.303a9877.js",
+    "static/js/453.3a8f4a51.chunk.js": "/pcousineau-react/static/js/453.3a8f4a51.chunk.js",
     "static/media/beerlog.png": "/pcousineau-react/static/media/beerlog.cc0c936224ea6a470620.png",
     "static/media/roomlinx.png": "/pcousineau-react/static/media/roomlinx.fdeb556c8881095fd541.png",
     "static/media/simulcare.png": "/pcousineau-react/static/media/simulcare.e92921b885cbd0a05e87.png",
@@ -25,12 +25,12 @@
     "static/media/bv3.jpg": "/pcousineau-react/static/media/bv3.851d63730fa2fa43c374.jpg",
     "static/media/a1-4.png": "/pcousineau-react/static/media/a1-4.1542ca035672d0b15d7c.png",
     "index.html": "/pcousineau-react/index.html",
-    "main.d45852cf.css.map": "/pcousineau-react/static/css/main.d45852cf.css.map",
-    "main.fac630bc.js.map": "/pcousineau-react/static/js/main.fac630bc.js.map",
-    "453.d24b4189.chunk.js.map": "/pcousineau-react/static/js/453.d24b4189.chunk.js.map"
+    "main.37ffe3c1.css.map": "/pcousineau-react/static/css/main.37ffe3c1.css.map",
+    "main.303a9877.js.map": "/pcousineau-react/static/js/main.303a9877.js.map",
+    "453.3a8f4a51.chunk.js.map": "/pcousineau-react/static/js/453.3a8f4a51.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d45852cf.css",
-    "static/js/main.fac630bc.js"
+    "static/css/main.37ffe3c1.css",
+    "static/js/main.303a9877.js"
   ]
 }
