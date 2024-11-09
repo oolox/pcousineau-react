@@ -17,22 +17,22 @@ export const timelineData: timelineItemType[] = [
         'Oversaw growth of team from 1 to 12+ members; creating a high performance team',
       ],
       screenshots: [
-        { fileName:'assets/img/plume3.png',
+        { fileName:'plume3.png',
           description:'Detailed time domain graphs driven by APIs and realtime data'
         },
-        { fileName:'assets/img/plume1.png',
+        { fileName:'plume1.png',
           description:'Realtime network topology via socket, rendered with D3 as a force graph'
         },
-        { fileName:'assets/img/plume2.png',
+        { fileName:'plume2.png',
           description:'Interactive health check, status and alarm dashboard'
         },
-        { fileName:'assets/img/plume4.png',
+        { fileName:'plume4.png',
           description:'Visual diagnostic tools for technicians to optimize network locations'
         },
-        { fileName:'assets/img/plume8.png',
+        { fileName:'plume8.png',
           description:'Timeline data via REST reports specific metrics over time'
         },
-        { fileName:'assets/img/plume9.png',
+        { fileName:'plume9.png',
           description:'Responsive, integrated dashboard used by technicians on tablets'
         }
       ]
@@ -53,16 +53,16 @@ export const timelineData: timelineItemType[] = [
 
       ],
       screenshots: [
-        { fileName:'assets/img/a1-1.png',
+        { fileName:'a1-1.png',
           description:'File system for server side marketing campaigns'
         },
-        { fileName:'assets/img/a1-2.png',
+        { fileName:'a1-2.png',
           description:'Marketing campaign segment generator for end users'
         },
-        { fileName:'assets/img/a1-3.png',
+        { fileName:'a1-3.png',
           description:'Web container designer for end users to lay out advertising assets'
         },
-        { fileName:'assets/img/a1-4.png',
+        { fileName:'a1-4.png',
           description:'SQL query builder for marketers to create targeting rules'
         }
       ]
@@ -82,16 +82,16 @@ export const timelineData: timelineItemType[] = [
         'Mentored junior team members',
       ],
       screenshots: [
-        { fileName:'assets/img/bv0.jpg',
+        { fileName:'bv0.jpg',
           description:'Gamification design wizard for end users to configure rules and rewards'
         },
-        { fileName:'assets/img/bv1.jpg',
+        { fileName:'bv1.jpg',
           description:'API driven tree component used to configure game settings.'
         },
-        { fileName:'assets/img/bv2.jpg',
+        { fileName:'bv2.jpg',
           description:'Reconfigurable dashboards enable selecting of over time data sets',
         },
-        { fileName:'assets/img/bv3.jpg',
+        { fileName:'bv3.jpg',
           description:'Complex multidimensional charting across reconfigurable metrics'
         }
 
@@ -110,16 +110,16 @@ export const timelineData: timelineItemType[] = [
       'Developed Internet TV for hospitality vertical'
     ],
     screenshots: [
-      { fileName:'assets/img/adrGarage.png',
+      { fileName:'adrGarage.png',
         description:'(Adrenaline Garage) graphics generation for live sports broadcast'
       },
-      { fileName:'assets/img/beerlog.png',
+      { fileName:'beerlog.png',
         description:'(Beerlog) Keg flow and status monitoring'
       },
-      { fileName:'assets/img/simulcare.png',
+      { fileName:'simulcare.png',
         description:'(Simulcare II) Mobile controlled therapy device'
       },
-      { fileName:'assets/img/roomlinx.png',
+      { fileName:'roomlinx.png',
         description:'(Roomlinx) Internet and POS integrated internet TV.'
       },
     ]

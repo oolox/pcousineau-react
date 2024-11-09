@@ -1,3 +1,4 @@
+
 import { createSlice } from '@reduxjs/toolkit'
 import type { RootState } from './store'
 import { timelineData } from '../services/timelineData'
@@ -22,3 +23,5 @@ export const selectScreenshots = (state: RootState) => {
     });
     return shots;
 }
+
+
