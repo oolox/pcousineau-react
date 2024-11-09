@@ -16,17 +16,15 @@ const Samples = () => {
             }) : []]
     });
 
-    const screenshots:screenshotType[]=shots;
-    const [modalScreen, setModalScreen] = React.useState({});
-    const [showModal, setShowModal] = React.useState(false);
+    const screenshots: screenshotType[] = shots;
+    const [modalScreen, setModalScreen] = React.useState<screenshotType>({});
 
-    const selectImg = (img: screenshotType) => {
+    const selectImg = (img: screenshotType): void => {
         setModalScreen(img);
-        setShowModal(true);
     }
 
-    const onClose = () => {
-        setShowModal(false);
+    const onClose = (): void => {
+        setModalScreen({});
     }
 
     const imgTiles = screenshots.map((img: any, index: number) => {
@@ -35,7 +33,10 @@ const Samples = () => {
                 className="screen-image"
                 alt={`${img.description}`}
                 onClick={() => selectImg(img)}
-                src={require(`../../assets/img/${img.fileName}`)} height={180} width={240}/>
+                src={require(`../../assets/img/${img.fileName}`)}
+                width={240}
+                height={180}
+            />
             <div className="screen-company">
                 {img.company}
             </div>
@@ -47,8 +48,8 @@ const Samples = () => {
             ;
     });
 
-    return <div className="samples" >
-        { showModal && <Modal close={()=> onClose()} screen={modalScreen}/> }
+    return <div className="samples">
+        {modalScreen.fileName && <Modal close={() => onClose()} screen={modalScreen}/>}
         <div className="screenshot-container">
             {imgTiles}
         </div>

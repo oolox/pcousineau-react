@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/modal/modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modal/modal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/samples/samples.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/samples/samples.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/samples/samples.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/samples/samples.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/timelineSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/timelineSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/topbar/topbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

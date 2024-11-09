@@ -32,12 +32,15 @@ const App = () => {
   }
 
   return (
-   <div>
-       <Topbar menu={menu} updatemenu={updateMenu}></Topbar>
-       <Showpage></Showpage>
-   </div>
-
-  );
+      <div>
+          <div style={{position: 'fixed', top: 0, left: 0, right: 0, height: '8rem'}}>
+              <Topbar menu={menu} updatemenu={updateMenu}></Topbar>
+          </div>
+            <div style={{position: 'fixed', top: '8rem', left: 0,right:0, bottom:0, overflow: 'auto' }}>
+                {Showpage()}
+            </div>
+          </div>
+          );
 }
 
-export default App;
+          export default App;
