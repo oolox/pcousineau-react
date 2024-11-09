@@ -1,10 +1,13 @@
 import React from "react";
-import { skillTree, skillTreeType } from '../../services/skillTreeData';
+import {useAppSelector, useAppDispatch} from '../../store/hooks';
+import { skillTreeType} from '../../App.types';
 import './skilltree.css';
+import {selectSkilltree} from "../../store/skilltreeSlice";
 
 const Skilltree = () => {
 
     const [showBranch, setShowBranch ] = React.useState<String[]>([]);
+    const skilltreeData: skillTreeType[] = useAppSelector(selectSkilltree);
 
     const toggleBranch = ( node: skillTreeType ) => {
             showBranch.includes(node.name) ?
@@ -14,14 +17,14 @@ const Skilltree = () => {
 
     const RenderTree = (data:skillTreeType[]) => {
         return (
-            <div style={{ paddingLeft: "20px" }}>
+            <div className="tree">
                 {data.map((node:skillTreeType) => {
                     return (
                         <div key={node.name} style={{ 'cursor': (node.children && node.children.length>0) ? 'pointer' : 'default'}}>
                             <div
-                                style={ { display: 'inline-flex'}}
+                                className="node"
                                 onClick={() =>  (node.children && node.children.length>0) && toggleBranch(node) }>
-                                    <div style={{ width: '1rem' }}>
+                                    <div className="node-name">
                                         {node.children ?  showBranch.includes(node.name) ? "+" :'-' : '' }
                                     </div>
                                     <div>
@@ -40,7 +43,7 @@ const Skilltree = () => {
     };
 
     return <div className="skilltree">
-        {RenderTree(skillTree)}
+        {RenderTree(skilltreeData)}
     </div>;
 }
 

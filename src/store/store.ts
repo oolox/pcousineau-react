@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { counterSlice } from './counterSlice'
-import {skillsSlice} from "./skillsSlice";
+import { skillsSlice} from "./skillsSlice";
+import { skilltreeSlice} from "./skilltreeSlice";
 
 export const store = configureStore({
     reducer: {
         counter: counterSlice.reducer,
         skills: skillsSlice.reducer,
+        skilltree: skilltreeSlice.reducer,
     },
 })
 

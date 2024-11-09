@@ -1,4 +1,13 @@
 .skilltree
 {
     padding: 1rem;
+    .tree {
+        padding-left: 2rem;
+        .node {
+            display: inline-flex;
+            .node-name {
+                width: 1rem;
+            }
+        }
+    }
 }

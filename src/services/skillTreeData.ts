@@ -1,18 +1,22 @@
-
-export interface skillTreeType {
-    name: string;
-    isFolder?: boolean;
-    children?: any;
-}
+import {skillTreeType} from "../App.types";
 
 export const skillTree : skillTreeType[] =[
-        { name: "Languages",
+        { name: "Development",
           children: [
-              { name: "React" },
-              { name: "Angular"},
-              { name: "html" },
-              { name: "Typescript" },
-              { name: "css" },
+              { name: "Frameworks",
+                children: [
+                    { name: "React" },
+                    { name: "Angular"},
+                    { name: "NextJs"},
+                    { name: "Tailwind"}]
+              },
+              {
+                  name: "Languages",
+                  children: [
+                      {name: "javascript"},
+                      {name: "typescript"},
+                      {name: "css / sass / scss"}]
+              }
           ]
         },
         {
@@ -23,8 +27,7 @@ export const skillTree : skillTreeType[] =[
                     children: [
                         { name: "REST" },
                         { name: "Sockets" },
-                        { name: "GraphQL" },
-                    ]
+                        { name: "GraphQL" }]
                 },
                 {
                     name: "Visualization",
@@ -32,8 +35,7 @@ export const skillTree : skillTreeType[] =[
                         { name: "D3" },
                         { name: "SVG/Canvas" },
                         { name: "ChartJS" },
-                        { name: "Mapbox" },
-                    ]
+                        { name: "Mapbox" }]
                 },
 
             ]
@@ -42,7 +44,7 @@ export const skillTree : skillTreeType[] =[
             name: "Tools",
             children: [
                 {
-                    name: "Development",
+                    name: "Platforms",
                     children: [
                         { name: "GitHub" },
                         { name: "Jira" },

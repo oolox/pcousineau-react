@@ -5,6 +5,11 @@ export interface colorLutType {
   highlight:string[];
 }
 
+export interface skillTreeType {
+  name: string;
+  isFolder?: boolean;
+  children?: skillTreeType[];
+}
 
 export interface jobItemType {
   company: string;
