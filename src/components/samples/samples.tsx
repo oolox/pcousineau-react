@@ -1,22 +1,57 @@
 import React from 'react';
 import "./samples.css";
-import {screenshotType} from "../../App.types";
+import {screenshotType, timelineItemType} from "../../App.types";
 import {useAppSelector} from "../../store/hooks";
-import {selectScreenshots, selectTimeline} from "../../store/timelineSlice";
+import {selectTimeline} from "../../store/timelineSlice";
+import Modal from "../modal/modal";
 
 const Samples = () => {
-    const screenshots: screenshotType[] = useAppSelector(selectScreenshots);
-    const imgTiles = screenshots.map((img: any, index:number) => {
-        return <div key={`${img.company}${index}`}>
-            <img
-                alt={`${img.description}`}
-                src={require(`../../assets/img/${img.fileName}`)} height={64} width={100}/>
-            {img.company}
-            {img.description}
-        </div>;
+    const timeline: timelineItemType[] = useAppSelector(selectTimeline);
+    let shots: screenshotType[] = [];
+
+    timeline.map((item: timelineItemType): any => {
+        shots = [...shots, ...item.screenshots ?
+            item.screenshots.map((ss: screenshotType): screenshotType => {
+                return {...ss, company: item.company}
+            }) : []]
     });
-    return <div className="samples">
-        {imgTiles}
+
+    const screenshots:screenshotType[]=shots;
+    const [modalScreen, setModalScreen] = React.useState({});
+    const [showModal, setShowModal] = React.useState(false);
+
+    const selectImg = (img: screenshotType) => {
+        setModalScreen(img);
+        setShowModal(true);
+    }
+
+    const onClose = () => {
+        setShowModal(false);
+    }
+
+    const imgTiles = screenshots.map((img: any, index: number) => {
+        return <div key={`${img.company}${index}`} className="screenshot">
+            <img
+                className="screen-image"
+                alt={`${img.description}`}
+                onClick={() => selectImg(img)}
+                src={require(`../../assets/img/${img.fileName}`)} height={180} width={240}/>
+            <div className="screen-company">
+                {img.company}
+            </div>
+            <div className="screen-description">
+                {img.description}
+            </div>
+
+        </div>
+            ;
+    });
+
+    return <div className="samples" >
+        { showModal && <Modal close={()=> onClose()} screen={modalScreen}/> }
+        <div className="screenshot-container">
+            {imgTiles}
+        </div>
     </div>;
 }
 

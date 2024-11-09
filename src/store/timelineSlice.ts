@@ -13,15 +13,4 @@ export const timelineSlice = createSlice({
 })
 
 export const selectTimeline = (state: RootState) => state.timeline
-export const selectScreenshots = (state: RootState) => {
-    let shots:screenshotType[]=[];
-
-    state.timeline.map( (item:timelineItemType):any => {
-        shots=[...shots,...item.screenshots ?
-            item.screenshots.map ( (ss:screenshotType):screenshotType =>
-            { return {...ss, company: item.company}})  : []]
-    });
-    return shots;
-}
-
 

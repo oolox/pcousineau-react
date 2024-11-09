@@ -1,0 +1,30 @@
+.modal {
+    cursor: pointer;
+    background: #d0d0d0;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+    .screenImg {
+        padding-top: 1rem;
+        height: auto;
+        width: auto;
+        max-width: 75%;
+        max-height: 75%;
+    }
+    .screenTitle {
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
