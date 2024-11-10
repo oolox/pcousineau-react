@@ -4,11 +4,12 @@ import { skillTreeType} from '../../App.types';
 import './skilltree.css';
 import {selectSkilltree} from "../../store/skilltreeSlice";
 import {ForceGraph2D} from "react-force-graph"; // Or ForceGraph3D for 3D graphs
-
+import {colorLut} from "../../services/colorLut";
 
 interface treeNodeType {
     id: string;
     name: string;
+    color?: string;
 }
 
 interface treeLinkType {
@@ -29,31 +30,47 @@ const Skilltree = () => {
     const [displayWidth, setDisplayWidth] = React.useState(window.innerWidth - 360);
     const [displayHeight, setDisplayHeight] = React.useState(window.innerHeight-260);
 
+    const fgRef= React.useRef();
+
     window.addEventListener('resize', () => {
         setDisplayWidth(window.innerWidth-400);
         setDisplayHeight(window.innerHeight-260);
     });
+
+
+    const getBranchColor= (( depth:number, id:number ): string => {
+        switch (depth) {
+            case 0: return '#202020';
+            case 1: return colorLut.highlight[id+1];
+            case 2: return colorLut.color[id+1];
+            case 3: return colorLut.lowlight[id];
+        }
+        return '#808080';
+    })
 
     const treeToGraph = (tree:skillTreeType[]):graphMapType => {
         let graph:graphMapType = {
             nodes: [],
             links: [],
         }
-        const parseGraph = ( tree: skillTreeType[]) =>
-        {
-            tree.map( (node:skillTreeType) => {
-                    graph.nodes.push({id: node.name, name: node.name});
+
+        const parseGraph = ( tree: skillTreeType[], depth:number) =>
+        {   depth++;
+            tree.map( (node:skillTreeType,id:number) => {
+                    graph.nodes.push({id: node.name, name: node.name, color: getBranchColor(depth,id)});
                     if (!showBranch.includes(node.name)) {
                     if (node.children) {
                         node.children.map((child: skillTreeType) => {
                             graph.links.push({source: node.name, target: child.name});
                         })
-                        parseGraph(node.children);
+                        parseGraph(node.children, depth);
                     }
                 }
             });
+
         }
-        parseGraph(skilltreeData);
+        parseGraph(tree,-1);
+        console.log(graph);
         return graph;
     }
 
@@ -98,6 +115,7 @@ const Skilltree = () => {
         </div>
         <div className="forceGraph">
             <ForceGraph2D
+                ref={fgRef}
                 graphData={graphData}
                 nodeLabel="name"
                 width={displayWidth}
@@ -105,6 +123,8 @@ const Skilltree = () => {
                 linkDirectionalArrowLength={3.5}
                 linkDirectionalArrowRelPos={1}
                 linkCurvature={0}
+                minZoom={2}
+
 
                 nodeCanvasObject={(node, ctx, globalScale) => {
                     const label = node.name;
@@ -113,7 +133,7 @@ const Skilltree = () => {
                     if(node.x && node.y) {
                         ctx.beginPath();
                         ctx.strokeStyle = '#404040';
-                        ctx.fillStyle= '#e0e0e0';
+                        ctx.fillStyle= `${node.color}`;
                         ctx.arc(node.x,node.y,12,0, Math.PI * 2, true);
                         ctx.fill();
                         ctx.stroke();
@@ -121,7 +141,7 @@ const Skilltree = () => {
                         ctx.textAlign = 'center';
                         ctx.strokeStyle = 'black';
                         ctx.lineWidth=0.5;
-                        ctx.fillStyle = 'black';
+                        ctx.fillStyle = '#f0f0f0';
                         ctx.textBaseline = 'middle';
                         ctx.fillText(label, node.x, node.y);
                         ctx.stroke();

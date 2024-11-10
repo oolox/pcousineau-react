@@ -1,13 +1,13 @@
 export type screenName = 'SKILLTREE' | 'SKILLS' | 'SAMPLES' | 'OVERVIEW';
 
 export interface colorLutType {
+  lowlight:string[];
   color:string[];
   highlight:string[];
 }
 
 export interface skillTreeType {
   name: string;
-  isFolder?: boolean;
   children?: skillTreeType[];
 }
 
