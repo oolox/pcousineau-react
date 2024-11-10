@@ -48,24 +48,12 @@ export const skillTree : skillTreeType[] =[
             {
                 name: "Tools",
                 children: [
-                    {
-                        name: "Platforms",
-                        children: [
                             {name: "GitHub"},
                             {name: "Jira"},
                             {name: "Heroku"},
-                        ]
-                    },
-                    {
-                        name: "Design",
-                        children: [
                             {name: "Figma"},
-                            {name: "Adobe"},
-                            {name: "Confluence"},
                         ]
-                    },
 
-                ]
             }
         ]
     }

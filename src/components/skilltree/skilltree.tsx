@@ -42,7 +42,7 @@ const Skilltree = () => {
         switch (depth) {
             case 0: return '#202020';
             case 1: return colorLut.highlight[id+1];
-            case 2: return colorLut.color[id+1];
+            case 2: return colorLut.color[id];
             case 3: return colorLut.lowlight[id];
         }
         return '#808080';
