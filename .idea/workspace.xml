@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="Fix Warnings">
+    <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="Tree Trimming Finetune">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/skilltree/skilltree.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skilltree/skilltree.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/skillTreeData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/skillTreeData.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +119,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731234006171</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tree Trimming">
+      <option name="closed" value="true" />
+      <created>1731234289054</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731234289054</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Tree Trimming Finetune">
+      <option name="closed" value="true" />
+      <created>1731237337533</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731237337533</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +145,9 @@
     <MESSAGE value="Skill Tree Updates" />
     <MESSAGE value="Skill Tree Colors" />
     <MESSAGE value="Fix Warnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix Warnings" />
+    <MESSAGE value="Tree Trimming" />
+    <MESSAGE value="Tree Trimming Finetune" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tree Trimming Finetune" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

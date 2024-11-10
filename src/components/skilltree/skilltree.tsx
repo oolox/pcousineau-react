@@ -70,7 +70,6 @@ const Skilltree = () => {
 
         }
         parseGraph(tree,-1);
-        console.log(graph);
         return graph;
     }
 
