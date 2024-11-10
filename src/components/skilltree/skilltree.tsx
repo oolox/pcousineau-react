@@ -123,7 +123,7 @@ const Skilltree = () => {
                 linkDirectionalArrowLength={3.5}
                 linkDirectionalArrowRelPos={1}
                 linkCurvature={0}
-                minZoom={2}
+                minZoom={1.75}
 
 
                 nodeCanvasObject={(node, ctx, globalScale) => {
@@ -134,7 +134,7 @@ const Skilltree = () => {
                         ctx.beginPath();
                         ctx.strokeStyle = '#404040';
                         ctx.fillStyle= `${node.color}`;
-                        ctx.arc(node.x,node.y,12,0, Math.PI * 2, true);
+                        ctx.arc(node.x,node.y,14,0, Math.PI * 2, true);
                         ctx.fill();
                         ctx.stroke();
                         ctx.beginPath();
