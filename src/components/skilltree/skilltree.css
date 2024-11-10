@@ -1,6 +1,14 @@
 .skilltree
 {
     padding: 1rem;
+    display: inline-flex;
+    .tree {
+        width: 240px;
+    }
+    .forceGraph {
+        margin-left: 3rem;
+        background-color: #f0f0f0;
+    }
     .tree {
         padding-left: 2rem;
         .node {
