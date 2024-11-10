@@ -56,11 +56,11 @@ const Skilltree = () => {
 
         const parseGraph = ( tree: skillTreeType[], depth:number) =>
         {   depth++;
-            tree.map( (node:skillTreeType,id:number) => {
+            tree.forEach( (node:skillTreeType,id:number) => {
                     graph.nodes.push({id: node.name, name: node.name, color: getBranchColor(depth,id)});
                     if (!showBranch.includes(node.name)) {
                     if (node.children) {
-                        node.children.map((child: skillTreeType) => {
+                        node.children.forEach((child: skillTreeType) => {
                             graph.links.push({source: node.name, target: child.name});
                         })
                         parseGraph(node.children, depth);
