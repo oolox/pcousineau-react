@@ -26,7 +26,7 @@ const Skilltree = () => {
     const [showBranch, setShowBranch ] = React.useState<String[]>([]);
     const skilltreeData: skillTreeType[] = useAppSelector(selectSkilltree);
 
-    const [displayWidth, setDisplayWidth] = React.useState(window.innerWidth - 400);
+    const [displayWidth, setDisplayWidth] = React.useState(window.innerWidth - 360);
     const [displayHeight, setDisplayHeight] = React.useState(window.innerHeight-260);
 
     window.addEventListener('resize', () => {

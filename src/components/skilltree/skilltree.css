@@ -7,7 +7,7 @@
     }
     .forceGraph {
         margin-left: 3rem;
-        background-color: #f0f0f0;
+        border: 1px solid #d0d0d0;
     }
     .tree {
         padding-left: 2rem;
