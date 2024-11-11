@@ -1,6 +1,6 @@
 import {skillTreeType} from "../App.types";
 
-export const skillTree : skillTreeType[] =[
+export const skillTree: skillTreeType[] = [
     {
         name: "Skills",
         children: [
@@ -48,14 +48,14 @@ export const skillTree : skillTreeType[] =[
             {
                 name: "Tools",
                 children: [
-                            {name: "GitHub"},
-                            {name: "Jira"},
-                            {name: "Heroku"},
-                            {name: "Figma"},
-                            {name: "Adobe"},
-                        ]
+                    {name: "GitHub"},
+                    {name: "Jira"},
+                    {name: "Heroku"},
+                    {name: "Figma"},
+                    {name: "Adobe"},
+                ]
 
             }
         ]
     }
-    ]
+]

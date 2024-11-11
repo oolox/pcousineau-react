@@ -152,23 +152,25 @@ const Skilltree = () => {
         ctx.stroke();
     }
     return <div className="skilltree">
-        <div className="tree">
+        <div className="data-tree">
+            <div className="description">
+                Select from tree or forcegraph to manipulate tree structure.
+            </div>
             {RenderTree(skilltreeData[0].children ? skilltreeData[0].children : [])}
         </div>
-        <div className="forceGraph">
-            <ForceGraph2D
-                nodeLabel=''
-                graphData={graphData}
-                width={600}
-                height={600}
-                linkDirectionalArrowLength={3.5}
-                linkDirectionalArrowRelPos={1}
-                linkCurvature={0}
-                minZoom={1.75}
-                onNodeClick={handleNodeClick}
-                nodeRelSize={14}
-                nodeCanvasObject={getNodeCanvasObj}
-            />
+        <div className="data-graph">
+            <div className="forceGraph">
+                <ForceGraph2D
+                    nodeLabel=''
+                    graphData={graphData}
+                    width={500}
+                    height={500}
+                    linkDirectionalArrowLength={0}
+                    onNodeClick={handleNodeClick}
+                    nodeRelSize={14}
+                    nodeCanvasObject={getNodeCanvasObj}
+                />
+            </div>
         </div>
     </div>
 }

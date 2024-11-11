@@ -1,22 +1,32 @@
 .skilltree
 {
-    padding: 1rem;
     display: inline-flex;
-    .tree {
-        width: 240px;
-    }
-    .forceGraph {
-        margin-left: 3rem;
-        border: 1px solid #d0d0d0;
-        height: 100%;
-    }
-    .tree {
-        padding-left: 1rem;
-        .node {
-            display: inline-flex;
-            .node-name {
-                width: 1rem;
+    .data-tree {
+        padding: 1rem;
+        .description {
+            padding: 0 1rem 1rem 1rem;
+            font-size: 0.8rem;
+            color: #606060;
+        }
+        .tree {
+
+            padding-left: 1rem;
+            .node {
+                display: inline-flex;
+                .node-name {
+                    width: 1rem;
+                }
             }
         }
+        width: 220px;
     }
+    .data-graph {
+        .forceGraph {
+            margin-left: 3rem;
+            border: 1px solid #d0d0d0;
+
+        }
+
+    }
+
 }
