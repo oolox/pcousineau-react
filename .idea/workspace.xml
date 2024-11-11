@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="Cleanup">
+    <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="Tree spiffy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/skilltree/skilltree.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skilltree/skilltree.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/skilltree/skilltree.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skilltree/skilltree.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/topbar/topbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/topbar/topbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/topbar/topbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/skillTreeData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/skillTreeData.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731237384172</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Tree spiffy">
+      <option name="closed" value="true" />
+      <created>1731292904162</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731292904162</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +168,8 @@
     <MESSAGE value="Tree Trimming" />
     <MESSAGE value="Tree Trimming Finetune" />
     <MESSAGE value="Cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup" />
+    <MESSAGE value="Tree spiffy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tree spiffy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

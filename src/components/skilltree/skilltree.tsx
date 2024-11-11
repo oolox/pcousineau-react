@@ -11,6 +11,7 @@ interface treeNodeType {
     name: string;
     color?: string;
     hasChildren?: boolean;
+    isRoot?: boolean;
 }
 
 interface treeLinkType {
@@ -27,15 +28,6 @@ interface graphMapType {
 const Skilltree = () => {
     const [showBranch, setShowBranch] = React.useState<String[]>([]);
     const skilltreeData: skillTreeType[] = useAppSelector(selectSkilltree);
-
-    const [displayWidth, setDisplayWidth] = React.useState(window.innerWidth - 360);
-    const [displayHeight, setDisplayHeight] = React.useState(window.innerHeight - 260);
-
-    window.addEventListener('resize', () => {
-        setDisplayWidth(window.innerWidth - 400);
-        setDisplayHeight(window.innerHeight - 260);
-    });
-
 
     const getBranchColor = ((depth: number, id: number): string => {
         switch (depth) {
@@ -65,6 +57,7 @@ const Skilltree = () => {
                     name: node.name,
                     color: getBranchColor(depth, id),
                     hasChildren: node.children && node.children.length > 0,
+                    isRoot: depth === 0,
                 });
                 if (!showBranch.includes(node.name)) {
                     if (node.children) {
@@ -84,12 +77,24 @@ const Skilltree = () => {
     const graphData = treeToGraph(skilltreeData);
 
     const toggleBranch = (branchName: string) => {
-        if (branchName !== 'Skills') {
+
             showBranch.includes(branchName) ?
                 setShowBranch(showBranch.filter((name) => branchName !== name)) :
                 setShowBranch([...showBranch, branchName]);
-        }
+
     }
+
+    const handleTreeClick = (node: any) => {
+        if (node.name !== skilltreeData[0].name)
+            toggleBranch(node.name);
+    };
+
+    const handleNodeClick = (node: any) => {
+        if (node.hasChildren && !node.isRoot) {
+            toggleBranch(node.name)
+        }
+    };
+
 
     const RenderTree = (data: skillTreeType[]) => {
         return (
@@ -100,7 +105,7 @@ const Skilltree = () => {
                              style={{'cursor': (node.children && node.children.length > 0) ? 'pointer' : 'default'}}>
                             <div
                                 className="node"
-                                onClick={() => (node.children && node.children.length > 0) && toggleBranch(node.name)}>
+                                onClick={() => (node.children && node.children.length > 0) && handleTreeClick(node)}>
                                 <div className="node-name">
                                     {node.children ? showBranch.includes(node.name) ? "+" : '-' : ''}
                                 </div>
@@ -112,23 +117,15 @@ const Skilltree = () => {
                                 {node.children && RenderTree(node.children)}
                             </div>
                         </div>
-                    )
-                        ;
+                    );
                 })}
             </div>
         );
     };
 
-    const handleClick = (node: any) => {
-        if (node.hasChildren) {
-            toggleBranch(node.name)
-        }
-    };
 
-    const getNodeCanvasObj = (node:any, ctx: CanvasRenderingContext2D, globalScale:number) => {
-
+    const getNodeCanvasObj = (node:any, ctx: CanvasRenderingContext2D) => {
         ctx.font = `4px Sans-Serif`;
-
         if (node.x && node.y) {
             if (node.hasChildren) {
                 ctx.beginPath();
@@ -142,7 +139,7 @@ const Skilltree = () => {
 
             } else {
                 ctx.beginPath();
-                ctx.fillStyle =  '#d0d0d0';
+                ctx.fillStyle =  '#f0f0f0';
                 ctx.rect(node.x-10,node.y-6,20,9);
                 ctx.fill();
                 ctx.textAlign = 'center';
@@ -154,22 +151,21 @@ const Skilltree = () => {
         ctx.fillText(node.name, node.x, node.y);
         ctx.stroke();
     }
-
     return <div className="skilltree">
         <div className="tree">
-            {RenderTree(skilltreeData)}
+            {RenderTree(skilltreeData[0].children ? skilltreeData[0].children : [])}
         </div>
         <div className="forceGraph">
             <ForceGraph2D
                 nodeLabel=''
                 graphData={graphData}
-                width={displayWidth}
-                height={displayHeight}
+                width={600}
+                height={600}
                 linkDirectionalArrowLength={3.5}
                 linkDirectionalArrowRelPos={1}
                 linkCurvature={0}
                 minZoom={1.75}
-                onNodeClick={handleClick}
+                onNodeClick={handleNodeClick}
                 nodeRelSize={14}
                 nodeCanvasObject={getNodeCanvasObj}
             />

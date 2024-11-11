@@ -17,7 +17,7 @@ const topbar = (props:any) => {
         });
       return <div
           onClick={() => handleClick(item)}
-          style={ item.selected ? { backgroundColor: colorLut.highlight[idx] } : { backgroundColor: colorLut.color[idx] }}
+          style={ item.selected ? { backgroundColor: colorLut.highlight[idx] } : { backgroundColor: colorLut.lowlight[idx] }}
           className={btnClass} key={item.id}>
           {item.label}
       </div>;

@@ -8,9 +8,10 @@
     .forceGraph {
         margin-left: 3rem;
         border: 1px solid #d0d0d0;
+        height: 100%;
     }
     .tree {
-        padding-left: 2rem;
+        padding-left: 1rem;
         .node {
             display: inline-flex;
             .node-name {

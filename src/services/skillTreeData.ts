@@ -52,6 +52,7 @@ export const skillTree : skillTreeType[] =[
                             {name: "Jira"},
                             {name: "Heroku"},
                             {name: "Figma"},
+                            {name: "Adobe"},
                         ]
 
             }
