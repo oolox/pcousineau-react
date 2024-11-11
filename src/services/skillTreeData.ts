@@ -38,7 +38,7 @@ export const skillTree : skillTreeType[] =[
                         name: "Visualization",
                         children: [
                             {name: "D3"},
-                            {name: "SVG/Canvas"},
+                            {name: "Canvas"},
                             {name: "ChartJS"},
                             {name: "Mapbox"}]
                     },
