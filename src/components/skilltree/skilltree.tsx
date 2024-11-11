@@ -126,9 +126,9 @@ const Skilltree = () => {
 
     const getNodeCanvasObj = (node:any, ctx: CanvasRenderingContext2D) => {
         ctx.font = `4px Sans-Serif`;
+        ctx.beginPath();
         if (node.x && node.y) {
             if (node.hasChildren) {
-                ctx.beginPath();
                 ctx.fillStyle = `${node.color}`;
                 ctx.arc(node.x, node.y, 14, 0, Math.PI * 2, true);
                 ctx.fill();
@@ -136,9 +136,9 @@ const Skilltree = () => {
                 ctx.strokeStyle = 'black';
                 ctx.lineWidth = 0.5;
                 ctx.fillStyle = '#f0f0f0';
+                ctx.fillText(node.name, node.x, node.y+1);
 
             } else {
-                ctx.beginPath();
                 ctx.fillStyle =  '#f0f0f0';
                 ctx.rect(node.x-10,node.y-6,20,9);
                 ctx.fill();
@@ -146,15 +146,16 @@ const Skilltree = () => {
                 ctx.strokeStyle = 'black';
                 ctx.lineWidth = 0.5;
                 ctx.fillStyle = '#202020';
+                ctx.fillText(node.name, node.x, node.y);
             }
         }
-        ctx.fillText(node.name, node.x, node.y);
+
         ctx.stroke();
     }
     return <div className="skilltree">
         <div className="data-tree">
             <div className="description">
-                Select from tree or forcegraph to manipulate tree structure.
+                Select from tree or forcegraph to manipulate tree structure. Click, drag and scroll to reconfigure graph.
             </div>
             {RenderTree(skilltreeData[0].children ? skilltreeData[0].children : [])}
         </div>
@@ -163,8 +164,9 @@ const Skilltree = () => {
                 <ForceGraph2D
                     nodeLabel=''
                     graphData={graphData}
-                    width={500}
-                    height={500}
+                    minZoom={1.85}
+                    width={600}
+                    height={600}
                     linkDirectionalArrowLength={0}
                     onNodeClick={handleNodeClick}
                     nodeRelSize={14}

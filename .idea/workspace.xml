@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="Color Updates">
+    <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="Fintetune tree">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/skilltree/skilltree.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skilltree/skilltree.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/skilltree/skilltree.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skilltree/skilltree.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/skillTreeData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/skillTreeData.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731295041568</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fintetune tree">
+      <option name="closed" value="true" />
+      <created>1731297048388</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731297048388</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +183,8 @@
     <MESSAGE value="Cleanup" />
     <MESSAGE value="Tree spiffy" />
     <MESSAGE value="Color Updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Color Updates" />
+    <MESSAGE value="Fintetune tree" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fintetune tree" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

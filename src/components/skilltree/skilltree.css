@@ -1,8 +1,8 @@
 .skilltree
-{
+{   margin-top: 1rem;
     display: inline-flex;
     .data-tree {
-        padding: 1rem;
+        padding: 0 1rem;
         .description {
             padding: 0 1rem 1rem 1rem;
             font-size: 0.8rem;
@@ -18,13 +18,11 @@
                 }
             }
         }
-        width: 220px;
+        width: 240px;
     }
     .data-graph {
         .forceGraph {
-            margin-left: 3rem;
             border: 1px solid #d0d0d0;
-
         }
 
     }
