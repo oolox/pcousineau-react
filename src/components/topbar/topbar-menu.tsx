@@ -5,13 +5,13 @@ const topbarMenu = [
         selected: true
     },
     {
-        label: 'skills table',
-        id: 'SKILLS',
+        label: 'recursive tree',
+        id: 'SKILLTREE',
         selected: false
     },
     {
-        label: 'recursive tree',
-        id: 'SKILLTREE',
+        label: 'skills table',
+        id: 'SKILLS',
         selected: false
     },
     {

@@ -20,11 +20,5 @@
         }
         width: 240px;
     }
-    .data-graph {
-        .forceGraph {
-            border: 1px solid #d0d0d0;
-        }
-
-    }
 
 }

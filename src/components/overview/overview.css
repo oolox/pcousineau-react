@@ -1,54 +1,67 @@
-.overview-container {
-    padding: 2rem;
 
-    .overview {
-        color: #202020;
-        width: 100%;
-        display: flex;
-        padding-bottom: 1rem;
-        font-size: 1rem;
+.overview-page {
 
-        /* '#206080','#208060','#806020','#802060' */
+    .overview-container {
+        position: absolute;
+        top: 0;
+        padding: 2rem;
+        bottom: 4rem;
+        .overview {
+            width: 100%;
+            display: flex;
+            padding-bottom: 1rem;
+            font-size: 1rem;
+            .category {
+                width: 8rem;
+                padding: 1rem;
+                border-right: 4px solid #a0a0a0;
+                text-align: right;
+                font-weight: bold;
 
-        .category {
-            width: 8rem;
-            padding: 1rem;
-            border-right: 4px solid #a0a0a0;
-            text-align: right;
-            font-weight: bold;
+                &.expertise {
+                    border-right: 4px solid #206080;
+                }
 
-            &.expertise {
-                border-right: 4px solid #206080;
+                &.development {
+                    border-right: 4px solid #208060;
+                }
+
+                &.teams {
+                    border-right: 4px solid #806020;
+                }
+
+                &.site {
+                    border-right: 4px solid #802060;
+                }
             }
-
-            &.development {
-                border-right: 4px solid #208060;
+            .description {
+                flex: 1;
+                padding: 1rem;
             }
-
-            &.teams {
-                border-right: 4px solid #806020;
-            }
-
-            &.site {
-                border-right: 4px solid #802060;
-            }
-        }
-
-        .description {
-            flex: 1;
-            padding: 1rem;
-
         }
     }
 
-    .footer {
-        padding-top: 2rem;
-        color: #808080;
+    .site-links {
+        position: fixed;
+        bottom: 20px;
+        display: inline-flex;
+        width: calc(100% - 4rem);
+        padding-right: 2rem;
+        .section {
+            &.react {
+                flex: 1;
+                margin-left: 2rem;
+            }
+            &.angular {
+            }
 
-        img {
-            position: relative;
-            top: +3px;
-            margin-right: 0.25rem;
+            img {
+                position: relative;
+                top: 7px;
+                margin-right: 0.5rem;
+                height: 24px;
+                width: 24px;
+            }
         }
     }
 
@@ -71,4 +84,5 @@
         color: #808080;
         text-decoration: none;
     }
+
 }

@@ -57,4 +57,23 @@
             }
         }
     }
+    a:link {
+        color: #808080;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #808080;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #202020;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: #808080;
+        text-decoration: none;
+    }
 }
