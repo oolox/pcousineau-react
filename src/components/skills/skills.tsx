@@ -1,10 +1,11 @@
 import React from "react";
-import {useAppSelector, useAppDispatch} from '../../store/hooks';
-import {decrement, increment, selectCount} from '../../store/counterSlice';
+import {useAppSelector } from '../../store/hooks';
 import {selectSkills} from "../../store/skillsSlice";
-import {skillsItemType} from "../../App.types";
+import {filterType, skillsItemType} from "../../App.types";
 import {colorLut} from "../../services/colorLut";
 import "./skills.css"
+import FilterSelect from "../filterselect/filterselect";
+
 
 interface sortOptionType {
     id: string;
@@ -13,8 +14,6 @@ interface sortOptionType {
 }
 
 const Skills = () => {
-    const dispatch = useAppDispatch()
-    const count: number = useAppSelector(selectCount);
     const skills: skillsItemType[] = useAppSelector(selectSkills);
     const initSort: sortOptionType[] = Object.keys(skills[0]).map((id) => {
         return {id: id, direction: 'asc', isSort: false}
@@ -24,8 +23,29 @@ const Skills = () => {
     const [sortObj, setSortObj] = React.useState(initSort);
     const [sortBy, setSortBy]= React.useState( {id:''});
 
+    const [filterState, setFilterState] = React.useState(
+        [
+            { id:"Languages", label:"Languages", enabled: true },
+            { id:"Integrations", label:"Integrations", enabled: true },
+            { id:"Development", label:"Development", enabled: true },
+            { id:"Tools", label:"Tools", enabled: true }
+        ]
+    );
+
+    const filterUpdate = ( filter:filterType) => {
+        const newFilter: filterType[] = filterState.map( (item:filterType) => {
+            if (item.id.toUpperCase()===filter.id.toUpperCase()) {
+                item.enabled = !item.enabled;
+            }
+            return item;
+        });
+        setFilterState(newFilter);
+        doFilter();
+    }
+
     const doSort = (col: sortOptionType) => {
         const dir:1|-1 = col.direction === 'asc' ? 1 : -1;
+
         switch (col.id) {
             case 'rating':
                 setViewlist([...viewlist].sort((a, b) => {
@@ -75,9 +95,7 @@ const Skills = () => {
             setSortObj(updated);
     }
 
-    let idx=-1;
-    const skillsHeader = sortObj.map((col: sortOptionType) => {
-        idx++;
+    const skillsHeader = sortObj.map((col: sortOptionType,idx:number) => {
         return <td
             onClick={() => sortSkillsList(col)}
             style={{
@@ -98,24 +116,22 @@ const Skills = () => {
         </tr>;
     });
 
-    const countcontrols =
-        <code style={{backgroundColor: '#0080ff'}}>
-            <button
-                aria-label="Increment value"
-                onClick={() => dispatch(increment())}
-            >
-                Increment
-            </button>
-            <span>{count}</span>
-            <button
-                aria-label="Decrement value"
-                onClick={() => dispatch(decrement())}
-            >
-                Decrement
-            </button>
-        </code>
+
+    const doFilter= () => {
+        const filterMap = filterState.map( (item:filterType) => item.enabled && item.id );
+        console.log('doFilter: ',filterMap, viewlist);
+        const newViewlist:skillsItemType[] = viewlist.filter( (item:skillsItemType)=> {
+            return filterMap.includes(item.type);
+        })
+        console.log('           newViewlist: ',newViewlist);
+        setViewlist(newViewlist);
+
+    }
+
+
 
     return <div className="skills">
+        <FilterSelect filters={filterState} filterupdate={filterUpdate}/>
         <table>
             <thead>
                 <tr>

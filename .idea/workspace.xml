@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="Fintetune tree">
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/icon-angular.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/icon-react.png" afterDir="false" />
+    <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="Overview added links">
+      <change afterPath="$PROJECT_DIR$/src/components/filterselect/filterselect.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/filterselect/filterselect.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/github-mark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/icon-github.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/overview/overview.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/overview/overview.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/overview/overview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/overview/overview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/skilltree/skilltree.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skilltree/skilltree.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/topbar/topbar-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/topbar/topbar-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/topbar/topbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.types.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.types.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/skills/skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skills/skills.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/topbar/topbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/topbar/topbar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,18 +20,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "oolox"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;oolox&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/oolox/pcousineau-react.git",
-    "accountId": "d8721fbc-ca6a-4383-8edc-a89d276b88b5"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/oolox/pcousineau-react.git&quot;,
+    &quot;accountId&quot;: &quot;d8721fbc-ca6a-4383-8edc-a89d276b88b5&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -44,22 +41,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Code/pcousineau-react/src/store",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "ts.external.directory.path": "C:\\Code\\pcousineau-react\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Code/pcousineau-react/src/store&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Code\\pcousineau-react\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Code\pcousineau-react\src\store" />
@@ -93,6 +90,10 @@
       <updated>1730682650958</updated>
       <workItem from="1730682651987" duration="51171000" />
       <workItem from="1730849587755" duration="11886000" />
+      <workItem from="1731613633728" duration="7503000" />
+      <workItem from="1732864440557" duration="628000" />
+      <workItem from="1732928767298" duration="3966000" />
+      <workItem from="1732932809656" duration="2819000" />
     </task>
     <task id="LOCAL-00001" summary="Skill Tree Updates">
       <option name="closed" value="true" />
@@ -182,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731297955523</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Overview added links">
+      <option name="closed" value="true" />
+      <created>1731396667099</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1731396667099</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,15 +207,20 @@
     <MESSAGE value="Tree spiffy" />
     <MESSAGE value="Color Updates" />
     <MESSAGE value="Fintetune tree" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fintetune tree" />
+    <MESSAGE value="Overview added links" />
+    <option name="LAST_COMMIT_MESSAGE" value="Overview added links" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/store/skillsSlice.ts</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/skills/skills.tsx</url>
+          <line>5</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

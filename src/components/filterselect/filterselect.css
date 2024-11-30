@@ -1,0 +1,22 @@
+
+    .filter-items {
+        text-transform: uppercase;
+
+        .menu-item {
+            padding: 0.5rem 1rem;
+            width: 8rem;
+            cursor: pointer;
+
+            &.selected {
+                color: #f0f0f0
+            }
+
+            &.notselected {
+                color: #808080
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 0.25rem;
+        }
+    }

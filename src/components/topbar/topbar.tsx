@@ -1,15 +1,14 @@
 import './topbar.css';
 import classNames from 'classnames';
 import {colorLut} from "../../services/colorLut";
+import {menuItem} from "../../App.types";
 
 const topbar = (props:any) => {
     const handleClick  = (item:any) => {
         props.updatemenu(item);
     }
-    let idx=-1;
 
-    const menuItems= props.menu.map((item:any) => {
-        idx++;
+    const menuItems= props.menu.map((item:menuItem,idx:number) => {
         const btnClass = classNames({
             'menu-item': true,
             'selected': item.selected,

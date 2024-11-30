@@ -38,12 +38,12 @@ export interface screenshotType {
 
 export interface menuItem {
   label: string;
-  action: screenName;
+  id?: string;
   selected?: boolean;
 }
 
 export interface filterType {
+  id: string;
   label: string;
-  color: string;
   enabled: boolean;
 }
