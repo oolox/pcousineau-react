@@ -1,6 +1,8 @@
 .skills {
     padding: 2rem;
+    display: inline-flex;
     table {
+        margin-left: 1rem;
         font-size: 0.8rem;
         thead {
             cursor: pointer;

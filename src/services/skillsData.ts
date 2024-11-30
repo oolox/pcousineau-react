@@ -16,7 +16,7 @@ export const skillsData: skillsItemType[] = [
   { label: 'ChartJs', type: 'Integrations', rating: 8 , years: 7 },
   { label: 'Kendo / Highcharts', type: 'Integrations', rating: 5 , years: 3 },
   { label: 'SSO (Okta/Google)', type: 'Integrations', rating: 6 , years: 2 },
-  { label: 'Mapbox / Google Maps', type: 'Integrations', rating: 6 , years: 5 },
+  { label: 'Mapbox', type: 'Integrations', rating: 6 , years: 5 },
   { label: 'AWS web services', type: 'Integrations', rating: 7 , years: 5 },
   { label: 'Google web services', type: 'Integrations', rating: 5 , years: 3 },
   { label: 'Software Architecture', type: 'Development', rating: 10 , years: 10 },

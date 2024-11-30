@@ -70,7 +70,6 @@ const Skills = () => {
             return item;
         });
         setFilterState(newFilter);
-
     }
 
     const sortUpdate = (col: sortOptionType):void => {
