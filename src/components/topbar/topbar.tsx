@@ -35,13 +35,13 @@ const topbar = (props:any) => {
             </div>
             <div className="tools">
                 <div className="link">
-                    <a target="_blank" href="mailto:oolotronic@hotmail.com">oolotronic&#64;hotmail.com</a>
+                    <a target="_blank" href="mailto:oolotronic@hotmail.com" rel="noreferrer">oolotronic&#64;hotmail.com</a>
                 </div>
                 <div className="link">
-                    <a target="_blank" href="https://www.linkedin.com/in/paul-cousineau-b3319461">LinkedIn</a>
+                    <a target="_blank" href="https://www.linkedin.com/in/paul-cousineau-b3319461" rel="noreferrer">LinkedIn</a>
                 </div>
                 <div className="link">
-                    <a target="_blank" href="./assets/pcousineauResume.pdf">Resume</a>
+                    <a target="_blank" href="./assets/pcousineauResume.pdf" rel="noreferrer">Resume</a>
                 </div>
             </div>
         </div>

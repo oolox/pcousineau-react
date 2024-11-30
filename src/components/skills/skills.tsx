@@ -6,7 +6,6 @@ import {colorLut} from "../../services/colorLut";
 import "./skills.css"
 import FilterSelect from "../filterselect/filterselect";
 
-
 interface sortOptionType {
     id: string;
     direction?: 'asc' | 'desc';
@@ -34,20 +33,20 @@ const Skills = () => {
 
         if (col) {
             const dir: 1 | -1 = col.direction === 'asc' ? 1 : -1;
-            switch (col.id) {
-                case 'rating':
+            switch (col.id.toUpperCase()) {
+                case 'RATING':
                     return ([...vList].sort((a:skillsItemType, b:skillsItemType):number => {
                         return (b.rating * dir) - (a.rating * dir)
                     }));
-                case 'years':
+                case 'YEARS':
                     return ([...vList].sort((a:skillsItemType, b:skillsItemType):number => {
                         return (b.years * dir) - (a.years * dir)
                     }));
-                case 'type':
+                case 'TYPE':
                     return ([...vList].sort((a:skillsItemType, b:skillsItemType):number => {
                         return a.type.toUpperCase() > b.type.toUpperCase() ? 1 * dir : -1 * dir;
                     }));
-                case 'label':
+                case 'LABEL':
                     return ([...vList].sort((a:skillsItemType, b:skillsItemType):number => {
                         return a.label.toUpperCase() > b.label.toUpperCase() ? 1 * dir : -1 * dir;
                     }));
