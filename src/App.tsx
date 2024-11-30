@@ -13,10 +13,9 @@ const App = () => {
   const [selectedPage, setSelectedPage] = React.useState<screenName>(menu[0].id as screenName);
 
   const updateMenu = ( data:any ) => {
-    const updated = menu.map (item => {
-      if (data.id === item.id) { return { ...item, selected: true }; }
-      else return { ...item, selected: false };
-    });
+    const updated = menu.map (item =>
+      data.id === item.id ? { ...item, selected: true } : { ...item, selected: false }
+    );
     setMenu(updated);
     setSelectedPage(data.id);
   }
@@ -43,4 +42,4 @@ const App = () => {
           );
 }
 
-          export default App;
+export default App;

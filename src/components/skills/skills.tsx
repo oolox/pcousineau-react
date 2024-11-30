@@ -95,8 +95,8 @@ const Skills = () => {
         return <td
             onClick={() => sortUpdate(col)}
             style={{
-                backgroundColor: col.isSort ? colorLut.highlight[idx] : colorLut.color[idx],
-                color: col.isSort ? 'white' : '#d0d0d0'
+                backgroundColor: col.isSort ? colorLut.highlight[idx] : colorLut.lowlight[idx],
+                color: col.isSort ? 'white' : '#808080'
             }}
             className="table-header" key={col.id}>
             {col.id} {col.isSort ? col.direction === 'asc' ? '+' : '-' : ''}
