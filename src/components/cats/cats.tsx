@@ -19,7 +19,7 @@ const Cats = (props:any) => {
                     alert(error);
                 });
         }
-    }, [ready]);
+    }, [dispatch,error,ready]);
 
     const reloadCats = () => {
         dispatch(fetchCatsReload())
@@ -34,8 +34,9 @@ const Cats = (props:any) => {
               </div>
           )
         }
-        <br/>
-        <button onClick={ () => reloadCats() }>NEW CATS</button>
+        <div>
+            <button onClick={ () => reloadCats() }>NEW CATS</button>
+        </div>
     </div>)
 }
 

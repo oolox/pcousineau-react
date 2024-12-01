@@ -49,9 +49,9 @@ const overview = () => {
         </div>
         <div className="site-links">
             <div className="section react">
-                <a href="https://github.com/oolox/pcousineau-react" target="_blank">
-                    <img src={require('../../assets/icons/icon-github.png')} height={24}/>
-                    <img src={require('../../assets/icons/icon-react.png')} height={24}/>
+                <a href="https://github.com/oolox/pcousineau-react" target="_blank"  rel="noreferrer">
+                    <img alt='github' src={require('../../assets/icons/icon-github.png')} height={24}/>
+                    <img alt='reat' src={require('../../assets/icons/icon-react.png')} height={24}/>
                     <span className='footer-text'>
                         This site developed in React
                     </span>
@@ -59,8 +59,8 @@ const overview = () => {
             </div>
             <br/>
             <div className="section angular">
-                <a href="https://www.pcousineau.net" target="_blank">
-                    <img src={require('../../assets/icons/icon-angular.png')} width={24} height={24}/>
+                <a href="https://www.pcousineau.net" target="_blank" rel="noreferrer">
+                    <img alt='angular' src={require('../../assets/icons/icon-angular.png')} width={24} height={24}/>
                     <span className='footer-text'>
                         Alternative site in Angular
                     </span>

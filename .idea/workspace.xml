@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="HiddenCats">
-      <change afterPath="$PROJECT_DIR$/src/components/cats/cats.css" afterDir="false" />
+    <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="Cleanup Cats">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/cats/cats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cats/cats.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modal/modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/overview/overview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/overview/overview.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,22 +40,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Code/pcousineau-react/src/store&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Code\\pcousineau-react\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Code/pcousineau-react/src/store",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "ts.external.directory.path": "C:\\Code\\pcousineau-react\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Code\pcousineau-react\src\store" />
@@ -91,7 +93,7 @@
       <workItem from="1732864440557" duration="628000" />
       <workItem from="1732928767298" duration="3966000" />
       <workItem from="1732932809656" duration="12016000" />
-      <workItem from="1733012256638" duration="17683000" />
+      <workItem from="1733012256638" duration="18938000" />
     </task>
     <task id="LOCAL-00001" summary="Skill Tree Updates">
       <option name="closed" value="true" />
@@ -229,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733033738346</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Cleanup Cats">
+      <option name="closed" value="true" />
+      <created>1733034632147</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1733034632147</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +259,8 @@
     <MESSAGE value="Cleanup" />
     <MESSAGE value="PreCats" />
     <MESSAGE value="HiddenCats" />
-    <option name="LAST_COMMIT_MESSAGE" value="HiddenCats" />
+    <MESSAGE value="Cleanup Cats" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup Cats" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

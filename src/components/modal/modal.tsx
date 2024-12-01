@@ -12,6 +12,7 @@ const modal = (props: any) => {
         </div>
         <img
             className="screenImg"
+            alt={props.screen.description}
             src={require(`../../assets/img/${props.screen.fileName}`)} height={180} width={240}/>
     </div>
 }
