@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="Overview added links">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/skills/skills.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skills/skills.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/skills/skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skills/skills.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/counterSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/counterSlice.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +91,7 @@
       <workItem from="1732864440557" duration="628000" />
       <workItem from="1732928767298" duration="3966000" />
       <workItem from="1732932809656" duration="12016000" />
+      <workItem from="1733012256638" duration="6505000" />
     </task>
     <task id="LOCAL-00001" summary="Skill Tree Updates">
       <option name="closed" value="true" />

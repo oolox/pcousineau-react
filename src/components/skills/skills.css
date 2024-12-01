@@ -1,7 +1,37 @@
 .skills {
-    padding: 2rem;
-    display: inline-flex;
-    table {
+    .searchContainer {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 2rem 0 2rem;
+
+        .searchLabel {
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            padding-top: 0.5rem;
+        }
+
+        input {
+            background-color: #d0d0d0;
+            padding: 0.5rem;
+        }
+        button {
+            margin-top: 0.25rem;
+            border: none;
+            height:1.5rem;
+            width: 1.5rem;
+            cursor: pointer;
+            border-radius: 100%;
+            margin-left: 0.25rem;
+            background-color: #808080;
+            color: #d0d0d0;
+        }
+    }
+
+    .skillTable {
+        padding: 2rem;
+        display: inline-flex;
+
+        table {
         margin-left: 1rem;
         font-size: 0.8rem;
         thead {
@@ -28,4 +58,5 @@
             }
         }
     }
+        }
 }

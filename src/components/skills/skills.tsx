@@ -6,6 +6,7 @@ import {colorLut} from "../../services/colorLut";
 import "./skills.css"
 import FilterSelect from "../filterselect/filterselect";
 
+
 interface sortOptionType {
     id: string;
     direction?: 'asc' | 'desc';
@@ -28,26 +29,30 @@ const Skills = () => {
         ]
     );
 
+    const [searchField, setSearchField] = React.useState('');
+    const [searchString, setSearchString] = React.useState('');
+
+
     const doSort = (vList: skillsItemType[]): any => {
-        const col: sortOptionType | undefined = sortObj.find ( item => item.isSort );
+        const col: sortOptionType | undefined = sortObj.find(item => item.isSort);
 
         if (col) {
             const dir: 1 | -1 = col.direction === 'asc' ? 1 : -1;
             switch (col.id.toUpperCase()) {
                 case 'RATING':
-                    return ([...vList].sort((a:skillsItemType, b:skillsItemType):number => {
+                    return ([...vList].sort((a: skillsItemType, b: skillsItemType): number => {
                         return (b.rating * dir) - (a.rating * dir)
                     }));
                 case 'YEARS':
-                    return ([...vList].sort((a:skillsItemType, b:skillsItemType):number => {
+                    return ([...vList].sort((a: skillsItemType, b: skillsItemType): number => {
                         return (b.years * dir) - (a.years * dir)
                     }));
                 case 'TYPE':
-                    return ([...vList].sort((a:skillsItemType, b:skillsItemType):number => {
+                    return ([...vList].sort((a: skillsItemType, b: skillsItemType): number => {
                         return a.type.toUpperCase() > b.type.toUpperCase() ? 1 * dir : -1 * dir;
                     }));
                 case 'LABEL':
-                    return ([...vList].sort((a:skillsItemType, b:skillsItemType):number => {
+                    return ([...vList].sort((a: skillsItemType, b: skillsItemType): number => {
                         return a.label.toUpperCase() > b.label.toUpperCase() ? 1 * dir : -1 * dir;
                     }));
             }
@@ -56,14 +61,26 @@ const Skills = () => {
     }
 
     const doFilter = (vList: skillsItemType[]): skillsItemType[] => {
-        const filterMap = filterState.map((item: filterType):string | false => item.enabled && item.id);
-        return vList.filter((item: skillsItemType):boolean => {
+        const filterMap = filterState.map((item: filterType): string | false => item.enabled && item.id);
+        return vList.filter((item: skillsItemType): boolean => {
             return filterMap.includes(item.type);
         });
     }
 
-    const filterUpdate = (filter: filterType):void => {
-        const newFilter: filterType[] = filterState.map((item: filterType):filterType => {
+    const doSearch = (vList: skillsItemType[]): skillsItemType[] => {
+        if (searchString && searchString.length > 2) {
+            return vList.filter( (item:skillsItemType) => item.label.toLowerCase().indexOf(searchString.toLowerCase()) > -1);
+        }
+        return vList;
+    }
+
+    const getViewList = ():skillsItemType[] => {
+        return doSearch(doFilter(doSort(skills)));
+    }
+
+
+    const filterUpdate = (filter: filterType): void => {
+        const newFilter: filterType[] = filterState.map((item: filterType): filterType => {
             if (item.id.toUpperCase() === filter.id.toUpperCase()) {
                 item.enabled = !item.enabled;
             }
@@ -72,11 +89,11 @@ const Skills = () => {
         setFilterState(newFilter);
     }
 
-    const sortUpdate = (col: sortOptionType):void => {
+    const sortUpdate = (col: sortOptionType): void => {
         let updated: any = {};
-        const sortCol: sortOptionType | undefined = sortObj.find ( item => item.isSort );
-        if (sortCol?.id===col.id) {
-            updated = sortObj.map( (item): sortOptionType => {
+        const sortCol: sortOptionType | undefined = sortObj.find(item => item.isSort);
+        if (sortCol?.id === col.id) {
+            updated = sortObj.map((item): sortOptionType => {
                 if (col.id === item.id) {
                     return {...item, direction: item.direction === 'asc' ? 'desc' : 'asc'};
                 } else return item;
@@ -91,6 +108,17 @@ const Skills = () => {
         setSortObj(updated);
     }
 
+    React.useEffect(() => {
+        const timerId = setTimeout( () => setSearchString(searchField),1000);
+        return () => {
+            clearTimeout(timerId);
+        };
+    }, [searchField]);
+
+    const handleSearch = (searchStr: string) => {
+        setSearchField(searchStr);
+    }
+
     const skillsHeader = sortObj.map((col: sortOptionType, idx: number) => {
         return <td
             onClick={() => sortUpdate(col)}
@@ -103,7 +131,7 @@ const Skills = () => {
         </td>;
     });
 
-    const skillsRows = doFilter(doSort(skills)).map((skill: any) => {
+    const skillsRows = getViewList().map((skill: any) => {
         return <tr key={skill.label}>
             <td>{skill.label}</td>
             <td>{skill.type}</td>
@@ -112,18 +140,38 @@ const Skills = () => {
         </tr>;
     });
 
+    const clearSearch = () => {
+        setSearchField('');
+        setSearchString('');
+    }
+
     return <div className="skills">
-        <FilterSelect filters={filterState} filterupdate={filterUpdate}/>
-        <table>
-            <thead>
-            <tr>
-                {skillsHeader}
-            </tr>
-            </thead>
-            <tbody>
-                {skillsRows}
-            </tbody>
-        </table>
+        <div className="searchContainer">
+            <div className="searchLabel">
+                Search
+            </div>
+            <input
+                value={searchField}
+                onChange={(e) => handleSearch(e.target.value)}
+                className="seachField" name="searchField"/>
+            <button
+                onClick={ () => clearSearch() }>
+                X
+            </button>
+        </div>
+        <div className="skillTable">
+            <FilterSelect filters={filterState} filterupdate={filterUpdate}/>
+            <table>
+                <thead>
+                <tr>
+                    {skillsHeader}
+                </tr>
+                </thead>
+                <tbody>
+                     {skillsRows}
+                </tbody>
+            </table>
+        </div>
     </div>;
 }
 
