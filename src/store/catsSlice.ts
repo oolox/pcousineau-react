@@ -19,9 +19,14 @@ export const catsSlice = createSlice({
             state.loading= false;
             state.ready = true;
             state.data = action.payload;
+        },
+        fetchCatsReload : (state) => {
+            state.loading = false;
+            state.ready = false;
         }
+
     },
 })
 
-export const { fetchCatsRequest, fetchCatsSuccess } = catsSlice.actions;
+export const { fetchCatsRequest, fetchCatsSuccess, fetchCatsReload } = catsSlice.actions;
 export const selectCats = (state: RootState) => state.cats

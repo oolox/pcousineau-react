@@ -54,7 +54,7 @@ const Samples = () => {
     return <div className="samples">
         {modalScreen.fileName && <Modal close={() => onClose()} screen={modalScreen}/>}
 
-        {/*<Cats></Cats>*/}
+        <Cats></Cats>
 
         <div className="screenshot-container">
             {imgTiles}

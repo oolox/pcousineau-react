@@ -1,5 +1,5 @@
 import {useAppDispatch, useAppSelector} from "../../store/hooks";
-import {fetchCatsRequest, fetchCatsSuccess, selectCats} from "../../store/catsSlice";
+import {fetchCatsReload, fetchCatsRequest, fetchCatsSuccess, selectCats} from "../../store/catsSlice";
 import React, { useEffect } from 'react';
 import axios from 'axios';
 
@@ -19,13 +19,23 @@ const Cats = (props:any) => {
                     alert(error);
                 });
         }
-    }, []);
+    }, [ready]);
 
+    const reloadCats = () => {
+        dispatch(fetchCatsReload())
+    }
 
     return (<div>
-        {loading ? 'loading' :
-            data.map( (item:any) => <img height="100" width="100" src={item.url} key={item.id} alt={item.name} /> )
+        { loading ? 'loading' :
+          data.map( (item:any) =>
+              <div style={{display: "inline-block"}}>
+                  <div style={{fontSize: "0.8rem"}}>{item.id}</div>
+                <img height="100" width="100" src={item.url} key={item.id} alt={item.name} />
+              </div>
+          )
         }
+        <br/>
+        <button onClick={ () => reloadCats() }>NEW CATS</button>
     </div>)
 }
 

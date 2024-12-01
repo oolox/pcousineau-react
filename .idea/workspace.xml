@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="PreCats">
-      <change afterPath="$PROJECT_DIR$/src/components/cats/cats.tsx" afterDir="false" />
+    <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="HiddenCats">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cats/cats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cats/cats.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/samples/samples.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/samples/samples.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/catsSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/catsSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/timelineSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/timelineSlice.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +92,7 @@
       <workItem from="1732864440557" duration="628000" />
       <workItem from="1732928767298" duration="3966000" />
       <workItem from="1732932809656" duration="12016000" />
-      <workItem from="1733012256638" duration="15278000" />
+      <workItem from="1733012256638" duration="17137000" />
     </task>
     <task id="LOCAL-00001" summary="Skill Tree Updates">
       <option name="closed" value="true" />
@@ -215,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733024019750</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="HiddenCats">
+      <option name="closed" value="true" />
+      <created>1733028965661</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1733028965661</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +241,8 @@
     <MESSAGE value="Debounced search" />
     <MESSAGE value="Cleanup" />
     <MESSAGE value="PreCats" />
-    <option name="LAST_COMMIT_MESSAGE" value="PreCats" />
+    <MESSAGE value="HiddenCats" />
+    <option name="LAST_COMMIT_MESSAGE" value="HiddenCats" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
