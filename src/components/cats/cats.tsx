@@ -2,7 +2,7 @@ import {useAppDispatch, useAppSelector} from "../../store/hooks";
 import {fetchCatsReload, fetchCatsRequest, fetchCatsSuccess, selectCats} from "../../store/catsSlice";
 import React, { useEffect } from 'react';
 import axios from 'axios';
-
+import "./cats.css";
 
 const Cats = (props:any) => {
     const { data, loading, error,ready } = useAppSelector(selectCats);
@@ -25,12 +25,12 @@ const Cats = (props:any) => {
         dispatch(fetchCatsReload())
     }
 
-    return (<div>
+    return (<div className="cats">
         { loading ? 'loading' :
           data.map( (item:any) =>
-              <div style={{display: "inline-block"}}>
-                  <div style={{fontSize: "0.8rem"}}>{item.id}</div>
-                <img height="100" width="100" src={item.url} key={item.id} alt={item.name} />
+              <div className="catCard">
+                  <div className="catTitle" >{item.id}</div>
+                  <img style={{backgroundColor:"#d0d0d0"}} height="100" width="100" src={item.url} key={item.id} alt={item.name} />
               </div>
           )
         }

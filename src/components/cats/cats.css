@@ -1,0 +1,13 @@
+.cats {
+    .catCard {
+        display: inline-block;
+        border: 1px solid white;
+        .catTitle {
+            background-color: #404040;
+            font-size: 0.8rem;
+            text-align: center;
+            color: #d0d0d0;
+            overflow: hidden;
+        }
+    }
+}
