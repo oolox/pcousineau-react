@@ -155,6 +155,7 @@ const Skills = () => {
                 onChange={(e) => handleSearch(e.target.value)}
                 className="seachField" name="searchField"/>
             <button
+                style={ searchField.length>0 ? { display: "inherit" } : { display:"none" }}
                 onClick={ () => clearSearch() }>
                 X
             </button>
