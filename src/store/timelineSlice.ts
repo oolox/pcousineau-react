@@ -2,7 +2,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { RootState } from './store'
 import { timelineData } from '../services/timelineData'
-import {screenshotType, timelineItemType} from "../App.types";
+import { timelineItemType} from "../App.types";
 
 const initialState: timelineItemType[] = timelineData;
 

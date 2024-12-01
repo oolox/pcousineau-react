@@ -4,6 +4,9 @@ import {screenshotType, timelineItemType} from "../../App.types";
 import {useAppSelector} from "../../store/hooks";
 import {selectTimeline} from "../../store/timelineSlice";
 import Modal from "../modal/modal";
+import Cats from "../cats/cats";
+
+
 
 const Samples = () => {
     const timeline: timelineItemType[] = useAppSelector(selectTimeline);
@@ -50,6 +53,9 @@ const Samples = () => {
 
     return <div className="samples">
         {modalScreen.fileName && <Modal close={() => onClose()} screen={modalScreen}/>}
+
+        {/*<Cats></Cats>*/}
+
         <div className="screenshot-container">
             {imgTiles}
         </div>
