@@ -5,7 +5,7 @@ import axios from 'axios';
 import "./cats.css";
 
 const Cats = (props:any) => {
-    const { data, loading, error,ready } = useAppSelector(selectCats);
+    const { data, loading, error, ready } = useAppSelector(selectCats);
     const dispatch = useAppDispatch()
 
     useEffect(() => {
