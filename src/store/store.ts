@@ -3,6 +3,7 @@ import { counterSlice } from './counterSlice'
 import { skillsSlice} from "./skillsSlice";
 import { skilltreeSlice} from "./skilltreeSlice";
 import { timelineSlice} from "./timelineSlice";
+import {catsSlice} from "./catsSlice";
 
 export const store = configureStore({
     reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
         skills: skillsSlice.reducer,
         skilltree: skilltreeSlice.reducer,
         timeline: timelineSlice.reducer,
+        cats: catsSlice.reducer,
     },
 })
 

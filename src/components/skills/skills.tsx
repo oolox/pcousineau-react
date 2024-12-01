@@ -6,7 +6,6 @@ import {colorLut} from "../../services/colorLut";
 import "./skills.css"
 import FilterSelect from "../filterselect/filterselect";
 
-
 interface sortOptionType {
     id: string;
     direction?: 'asc' | 'desc';

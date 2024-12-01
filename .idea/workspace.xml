@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="Debounced search">
+    <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="Cleanup">
+      <change afterPath="$PROJECT_DIR$/src/store/catsSlice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/skills/skills.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skills/skills.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/skills/skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skills/skills.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/skillsData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/skillsData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +94,7 @@
       <workItem from="1732864440557" duration="628000" />
       <workItem from="1732928767298" duration="3966000" />
       <workItem from="1732932809656" duration="12016000" />
-      <workItem from="1733012256638" duration="8152000" />
+      <workItem from="1733012256638" duration="10863000" />
     </task>
     <task id="LOCAL-00001" summary="Skill Tree Updates">
       <option name="closed" value="true" />
@@ -198,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733018999946</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Cleanup">
+      <option name="closed" value="true" />
+      <created>1733021137356</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1733021137356</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,13 +220,13 @@
     <MESSAGE value="Fix Warnings" />
     <MESSAGE value="Tree Trimming" />
     <MESSAGE value="Tree Trimming Finetune" />
-    <MESSAGE value="Cleanup" />
     <MESSAGE value="Tree spiffy" />
     <MESSAGE value="Color Updates" />
     <MESSAGE value="Fintetune tree" />
     <MESSAGE value="Overview added links" />
     <MESSAGE value="Debounced search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debounced search" />
+    <MESSAGE value="Cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
