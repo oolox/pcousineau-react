@@ -1,3 +1,8 @@
+const App = () => { return (<div>SOMEAPP</div>) }
+
+<div className="btn-panel {this.props.visible ? 'show' : 'hidden'}">
+    {items.map((item) => ( <div key={item.id}>{item.label}</div> ))}
+</div>
 
 const [count, setCount] = React.useState(0);
 const calculation = useMemo(() => expensiveCalculation(count), [count]);
@@ -7,9 +12,13 @@ const usernameRef = useRef(null);
 const count = useSelector((state) => state.counter.value);
     <h1>{count}</h1>
 
+export interface colorLutType {
+  lowlight:string[];
+  color:string[];
+  highlight:string[];
+}
 
-{items.map((item) => ( <div key={item.id}>{item.label}</div> ))}
-<div className="btn-panel {this.props.visible ? 'show' : 'hidden'}">
+
 _____________________________________________________________
 // HIGHER LEVEL COMPONENTS
 const withAuthentication = (WrappedComponent) => {
@@ -24,27 +33,13 @@ _____________________________________________________________
 // CODE SPLITTING LAZY AND SUSPENSE
 const MyComponent = lazy(() => import('./MyComponent'));
 <Suspense fallback={<div>Loading...</div>}> <MyComponent/> </Suspense>
-_____________________________________________________________
-// ROUTER
-(index.tsx)
-ReactDOM.createRoot(root).render(
-    <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="dashboard" element={<Dashboard/>}>
-                <Route index element={<RecentActivity/>}/>
-                <Route path="project/:id" element={<Project/>}/>
-            </Route>
-        </Routes>
-    </BrowserRouter>
-);
+
 _____________________________________________________________
 // REDUX
-#1 WRAP (index.tsx or Component) in PROVIDER to STORE
+#1 WRAP (index.tsx or Component) in PROVIDER to STORE...
 <Provider store={store}>
     <App/>
 </Provider>
-
 
 #2 CREATE STORE...
 export const store = configureStore({
@@ -72,7 +67,7 @@ export const catsSlice = createSlice({
     },
 })
 
-export const {fetchCatsRequest, fetchCatsSuccess, fetchCatsReload} = catsSlice.actions;
+export const {fetchCatsRequest, fetchCatsSuccess} = catsSlice.actions;
 export const selectCats = (state: RootState) => state.cats
 
 #4 DISPATCH AND SUBSCRIBE
@@ -139,16 +134,24 @@ expect(result.props.children).toEqual([
   <span className={"description"}>{"Description"}</span>,
 ]);
 
+______________________________________________________________
+// ROUTER
+The main components of a react-router are:
 
+Router(usually imported as BrowserRouter):  It is the parent component that is used to store all of the other components. Everything within this will be part of the routing functionality
+Switch: The switch component is used to render only the first route that matches the location rather than rendering all matching routes.
+Route: This component checks the current URL and displays the component associated with that exact path. All routes are placed within the switch components.
+Link: The Link component is used to create links to different routes.
 
-
-
-
-
-
-
-
-
-
-
-
+(index.tsx)
+ReactDOM.createRoot(root).render(
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="dashboard" element={<Dashboard/>}>
+                <Route index element={<RecentActivity/>}/>
+                <Route path="project/:id" element={<Project/>}/>
+            </Route>
+        </Routes>
+    </BrowserRouter>
+);
