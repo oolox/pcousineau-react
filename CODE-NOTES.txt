@@ -85,6 +85,8 @@ useEffect(() => {
                 alert(error);
             });
     }
+
+    return () => { // Cleanup function };
 }, [dispatch, error, ready]);
 
 __________________________________________
