@@ -18,6 +18,11 @@ const topbarMenu = [
         label: 'samples',
         id: 'SAMPLES',
         selected: false
+    },
+    {
+        label: 'cats',
+        id: 'CATS',
+        selected: false
     }
 ];
 

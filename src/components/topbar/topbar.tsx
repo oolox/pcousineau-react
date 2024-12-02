@@ -1,6 +1,5 @@
 import './topbar.css';
 import classNames from 'classnames';
-import {colorLut} from "../../services/colorLut";
 import {menuItem} from "../../App.types";
 
 const topbar = (props:any) => {
@@ -16,7 +15,6 @@ const topbar = (props:any) => {
         });
       return <div
           onClick={() => handleClick(item)}
-          style={ item.selected ? { backgroundColor: colorLut.highlight[idx] } : { backgroundColor: colorLut.lowlight[idx] }}
           className={btnClass} key={item.id}>
           {item.label}
       </div>;

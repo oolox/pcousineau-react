@@ -1,4 +1,4 @@
-export type screenName = 'SKILLTREE' | 'SKILLS' | 'SAMPLES' | 'OVERVIEW';
+export type screenName = 'SKILLTREE' | 'SKILLS' | 'SAMPLES' | 'OVERVIEW' | 'CATS';
 
 export interface colorLutType {
   lowlight:string[];

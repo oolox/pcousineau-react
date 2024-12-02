@@ -42,13 +42,16 @@
                 padding: 0.5rem 1rem;
                 width: 100%;
                 cursor: pointer;
+                border-right:1px solid white;
 
                 &.selected {
-                    color: #f0f0f0
+                    color: #f0f0f0;
+                    background: #404040;
                 }
 
                 &.notselected {
-                    color: #808080
+                    color: #606060;
+                    background: #a0a0a0;
                 }
             }
 
