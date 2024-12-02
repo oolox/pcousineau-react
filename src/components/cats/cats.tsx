@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 import "./cats.css";
 
-const Cats = (props:any) => {
+const Cats = () => {
     const { data, loading, error, ready } = useAppSelector(selectCats);
     const dispatch = useAppDispatch()
 
@@ -28,7 +28,7 @@ const Cats = (props:any) => {
     return (<div className="cats">
         { loading ? 'loading' :
           data.map( (item:any) =>
-              <div className="catCard">
+              <div className="catCard" key={item.id}>
                   <div className="catTitle" >{item.id}</div>
                   <img style={{backgroundColor:"#d0d0d0"}} height="100" width="100" src={item.url} key={item.id} alt={item.name} />
               </div>
