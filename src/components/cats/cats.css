@@ -1,4 +1,25 @@
 .cats {
+    padding: 1rem;
+    .catsControls
+    {
+        button {
+            border: 1px solid #808080;
+            width: auto;
+            border-radius: 0.25rem;
+            padding: 0.5rem 0.5rem;
+            cursor: pointer;
+            background-color: #d0d0d0;
+            color: #404040;
+            margin-right: 0.25rem;
+        }
+        margin-top: 1rem;
+    }
+    .tooltip {
+        color: #808080;
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
     .catCard {
         display: inline-block;
         border: 1px solid white;

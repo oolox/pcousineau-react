@@ -39,7 +39,7 @@ const topbar = (props:any) => {
                     <a target="_blank" href="https://www.linkedin.com/in/paul-cousineau-b3319461" rel="noreferrer">LinkedIn</a>
                 </div>
                 <div className="link">
-                    <a target="_blank" href="./assets/pcousineauResume.pdf" rel="noreferrer">Resume</a>
+                    <a target="_blank" href="./assets/pcousineauResumeReact.pdf" rel="noreferrer">Resume</a>
                 </div>
             </div>
         </div>
