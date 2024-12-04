@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pcousineau-react/static/css/main.a73b5dcd.css",
-    "main.js": "/pcousineau-react/static/js/main.b75a7a30.js",
+    "main.js": "/pcousineau-react/static/js/main.077748b8.js",
     "static/js/453.3a8f4a51.chunk.js": "/pcousineau-react/static/js/453.3a8f4a51.chunk.js",
     "static/media/beerlog.png": "/pcousineau-react/static/media/beerlog.cc0c936224ea6a470620.png",
     "static/media/roomlinx.png": "/pcousineau-react/static/media/roomlinx.fdeb556c8881095fd541.png",
@@ -27,11 +27,11 @@
     "static/media/icon-angular.png": "/pcousineau-react/static/media/icon-angular.26cb7ab3f4ab759e12b5.png",
     "index.html": "/pcousineau-react/index.html",
     "main.a73b5dcd.css.map": "/pcousineau-react/static/css/main.a73b5dcd.css.map",
-    "main.b75a7a30.js.map": "/pcousineau-react/static/js/main.b75a7a30.js.map",
+    "main.077748b8.js.map": "/pcousineau-react/static/js/main.077748b8.js.map",
     "453.3a8f4a51.chunk.js.map": "/pcousineau-react/static/js/453.3a8f4a51.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a73b5dcd.css",
-    "static/js/main.b75a7a30.js"
+    "static/js/main.077748b8.js"
   ]
 }
