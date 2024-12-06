@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pcousineau-react/static/css/main.2e8e4e65.css",
+    "main.css": "/pcousineau-react/static/css/main.b937bfbe.css",
     "main.js": "/pcousineau-react/static/js/main.1059b13a.js",
     "static/js/453.3a8f4a51.chunk.js": "/pcousineau-react/static/js/453.3a8f4a51.chunk.js",
     "static/media/beerlog.png": "/pcousineau-react/static/media/beerlog.cc0c936224ea6a470620.png",
@@ -26,12 +26,12 @@
     "static/media/a1-4.png": "/pcousineau-react/static/media/a1-4.1542ca035672d0b15d7c.png",
     "static/media/icon-angular.png": "/pcousineau-react/static/media/icon-angular.26cb7ab3f4ab759e12b5.png",
     "index.html": "/pcousineau-react/index.html",
-    "main.2e8e4e65.css.map": "/pcousineau-react/static/css/main.2e8e4e65.css.map",
+    "main.b937bfbe.css.map": "/pcousineau-react/static/css/main.b937bfbe.css.map",
     "main.1059b13a.js.map": "/pcousineau-react/static/js/main.1059b13a.js.map",
     "453.3a8f4a51.chunk.js.map": "/pcousineau-react/static/js/453.3a8f4a51.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e8e4e65.css",
+    "static/css/main.b937bfbe.css",
     "static/js/main.1059b13a.js"
   ]
 }
