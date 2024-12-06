@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="RESUME" />
+    <list default="true" id="34ac91ab-db14-4e83-9ece-b836c643041b" name="Changes" comment="RESUME">
+      <change afterPath="$PROJECT_DIR$/src/components/skills/skillsChart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/skills/skills.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skills/skills.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/skills/skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skills/skills.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/topbar/topbar-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/topbar/topbar-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/topbar/topbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/topbar/topbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/skillsData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/skillsData.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,22 +44,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Code/pcousineau-react/public/assets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "ts.external.directory.path": "C:\\Code\\pcousineau-react\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Code/pcousineau-react/public/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Code\\pcousineau-react\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Code\pcousineau-react\public\assets" />
@@ -88,7 +98,8 @@
       <workItem from="1732928767298" duration="3966000" />
       <workItem from="1732932809656" duration="12016000" />
       <workItem from="1733012256638" duration="47618000" />
-      <workItem from="1733266620009" duration="2152000" />
+      <workItem from="1733266620009" duration="11879000" />
+      <workItem from="1733455388834" duration="3450000" />
     </task>
     <task id="LOCAL-00001" summary="Skill Tree Updates">
       <option name="closed" value="true" />
@@ -298,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733268168065</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="RESUME">
+      <option name="closed" value="true" />
+      <created>1733268899709</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1733268899709</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,11 +349,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/store/skillsSlice.ts</url>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/skills/skills.tsx</url>
-          <line>5</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -5,6 +5,7 @@ import {filterType, skillsItemType} from "../../App.types";
 import {colorLut} from "../../services/colorLut";
 import "./skills.css"
 import FilterSelect from "../filterselect/filterselect";
+import SkillsChart from "./skillsChart"
 
 interface sortOptionType {
     id: string;
@@ -168,13 +169,17 @@ const Skills = () => {
                 </tr>
                 </thead>
                 <tbody>
-                     {skillsRows}
+                    {skillsRows}
                 </tbody>
             </table>
+            <div className="chart-container">
+                <SkillsChart data={getViewList()}></SkillsChart>
+            </div>
         </div>
-    </div>;
-}
+    </div>
+        ;
+        }
 
-export default Skills;
+        export default Skills;
 
 

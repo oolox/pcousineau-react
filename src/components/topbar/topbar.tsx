@@ -21,7 +21,6 @@ const topbar = (props:any) => {
     });
 
     return <div className="header">
-
         <div className="title-bar">
             <div className="title-content">
                 <div className="title">
@@ -43,8 +42,6 @@ const topbar = (props:any) => {
                 </div>
             </div>
         </div>
-
-
         <div className="topbar">
             <div className="menu-items">
                 {menuItems}
