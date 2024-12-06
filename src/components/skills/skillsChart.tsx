@@ -1,8 +1,6 @@
 import React from 'react';
 import { ResponsiveContainer, BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
-
-
 const SkillsChart = (props:any) => {
     return (
         <ResponsiveContainer>
