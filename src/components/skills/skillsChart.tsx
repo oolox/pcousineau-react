@@ -26,8 +26,8 @@ const SkillsChart = (props:any) => {
                     type="category" dataKey="label" />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="rating" fill="#4080B0" activeBar={<Rectangle fill="pink" stroke="blue" />} />
-                <Bar dataKey="years" fill="#40b080" activeBar={<Rectangle fill="gold" stroke="purple" />} />
+                <Bar dataKey="rating" fill="#4080B0" />
+                <Bar dataKey="years" fill="#40b080" />
             </BarChart>
         </ResponsiveContainer>
     );
