@@ -45,7 +45,6 @@
         table {
             margin-left: 1rem;
             font-size: 0.8rem;
-
             thead {
                 cursor: pointer;
                 tr {
@@ -56,11 +55,10 @@
 
                         text-transform: uppercase;
                         padding: 0.25rem 2rem 0.25rem 0.5rem;
-                        width: 4rem;
-                    }
-
-                    td:first-child {
                         width: 10rem;
+                    }
+                    td:first-child {
+                        width: 22rem;
                     }
                 }
             }
